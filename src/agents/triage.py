@@ -158,14 +158,16 @@ class TriageAgent:
         return DomainHint.GENERAL
 
     def calculate_estimated_cost_per_page(self, origin: OriginType, complexity: LayoutComplexity, density: float) -> ExtractionCostTier:
+        # Scanned images might be extractable with layout models (Strategy B) first.
+        # Escalation to Vision (Strategy C) will happen at the extraction stage if needed.
         if origin == OriginType.SCANNED_IMAGE:
-            return ExtractionCostTier.NEEDS_VISION_MODEL
+            return ExtractionCostTier.NEEDS_LAYOUT_MODEL
         
         if complexity in [LayoutComplexity.TABLE_HEAVY, LayoutComplexity.MULTI_COLUMN]:
             return ExtractionCostTier.NEEDS_LAYOUT_MODEL
             
-        if density < self.rules["density_threshold"] / 10:
-            return ExtractionCostTier.NEEDS_VISION_MODEL
+        # if density < self.rules["density_threshold"] / 10:
+        #     return ExtractionCostTier.NEEDS_VISION_MODEL
             
         return ExtractionCostTier.FAST_TEXT_SUFFICIENT
 
