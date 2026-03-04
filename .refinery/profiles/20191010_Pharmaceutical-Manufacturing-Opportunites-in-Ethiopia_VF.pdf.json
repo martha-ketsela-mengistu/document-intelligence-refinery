@@ -1,0 +1,224 @@
+{
+  "document_id": "20191010_Pharmaceutical-Manufacturing-Opportunites-in-Ethiopia_VF.pdf",
+  "overall_origin_type": "native_digital",
+  "overall_layout_complexity": "table_heavy",
+  "overall_estimated_cost": "needs_layout_model",
+  "domain_hint": "financial",
+  "language": {
+    "code": "en",
+    "confidence": 0.9
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0001601944822173517,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 101,
+        "image_count": 9,
+        "rect_count": 10
+      }
+    },
+    {
+      "page_number": 2,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0005012025384226053,
+      "image_area_ratio": 0.5964268123979916,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 316,
+        "image_count": 9,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 3,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.00037272973585225394,
+      "image_area_ratio": 0.24167984740522017,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 235,
+        "image_count": 8,
+        "rect_count": 7
+      }
+    },
+    {
+      "page_number": 4,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0008279358387867087,
+      "image_area_ratio": 0.11046035341493804,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 522,
+        "image_count": 10,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 5,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0003013559566465032,
+      "image_area_ratio": 0.3021143711252889,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 190,
+        "image_count": 14,
+        "rect_count": 5
+      }
+    },
+    {
+      "page_number": 6,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0003885905756757541,
+      "image_area_ratio": 0.24167984740522017,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 245,
+        "image_count": 8,
+        "rect_count": 7
+      }
+    },
+    {
+      "page_number": 7,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0010563319322451112,
+      "image_area_ratio": 0.09981997325055404,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 666,
+        "image_count": 9,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 8,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0012863141096858635,
+      "image_area_ratio": 0.7957796646289623,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 811,
+        "image_count": 7,
+        "rect_count": 19
+      }
+    },
+    {
+      "page_number": 9,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0013735487287151146,
+      "image_area_ratio": 0.7457865918824769,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 866,
+        "image_count": 8,
+        "rect_count": 9
+      }
+    },
+    {
+      "page_number": 10,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0012577645980035633,
+      "image_area_ratio": 0.17772814185054037,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 793,
+        "image_count": 8,
+        "rect_count": 5
+      }
+    },
+    {
+      "page_number": 11,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.00034576630815230365,
+      "image_area_ratio": 0.24167984740522017,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 218,
+        "image_count": 8,
+        "rect_count": 7
+      }
+    },
+    {
+      "page_number": 12,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0009643390612688102,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 608,
+        "image_count": 11,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 13,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.001319621873315214,
+      "image_area_ratio": 0.12959914666042505,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 832,
+        "image_count": 10,
+        "rect_count": 5
+      }
+    },
+    {
+      "page_number": 14,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002199898483519473,
+      "image_area_ratio": 0.1240507203620401,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1387,
+        "image_count": 9,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 15,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.00017605532204085185,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 111,
+        "image_count": 12,
+        "rect_count": 6
+      }
+    }
+  ],
+  "metadata": {}
+}

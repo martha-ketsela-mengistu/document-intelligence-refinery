@@ -1,0 +1,56 @@
+{
+  "document_id": "2022_Audited_Financial_Statement_Report.pdf",
+  "overall_origin_type": "scanned_image",
+  "overall_layout_complexity": "single_column",
+  "overall_estimated_cost": "needs_layout_model",
+  "domain_hint": "general",
+  "language": {
+    "code": "en",
+    "confidence": 0.9
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "origin_type": "scanned_image",
+      "layout_complexity": "single_column",
+      "character_density": 0.0,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": false,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 0,
+        "image_count": 1,
+        "rect_count": 0
+      }
+    },
+    {
+      "page_number": 2,
+      "origin_type": "scanned_image",
+      "layout_complexity": "single_column",
+      "character_density": 0.0,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": false,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 0,
+        "image_count": 1,
+        "rect_count": 0
+      }
+    },
+    {
+      "page_number": 3,
+      "origin_type": "scanned_image",
+      "layout_complexity": "single_column",
+      "character_density": 0.0,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": false,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 0,
+        "image_count": 1,
+        "rect_count": 0
+      }
+    }
+  ],
+  "metadata": {}
+}
