@@ -1,0 +1,25 @@
+# Extraction thresholds and chunking constitution 
+strategy_a:
+  name: fast_text
+  min_char_count_per_page: 100
+  min_char_density: 0.001
+  max_image_area_pct: 0.5
+  font_metadata_bonus: true
+  accept_confidence_threshold: 0.6
+
+escalation:
+  strategy_order: [fast_text, layout_aware, vision_augmented]
+  per_document_vlm_cap_usd: 2.0
+
+chunking_constitution:
+  table_cell_split: false
+  caption_attached_to_figure: true
+  numbered_list_as_single_ldu: true
+  max_tokens_per_ldu: 1024
+  section_headers_as_parent_metadata: true
+  resolve_cross_references: true
+
+language_policy:
+  primary_languages: ["en", "am"]
+  ocr_confidence_threshold: 0.6
+  tesseract_first_for_non_latin: true
