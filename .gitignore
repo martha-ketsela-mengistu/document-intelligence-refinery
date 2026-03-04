@@ -1,0 +1,9 @@
+docs/
+.github/
+.specify/
+.agent/
+.antigravity/
+.vscode/
+.venv/
+.env
+data/
