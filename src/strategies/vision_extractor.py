@@ -5,6 +5,7 @@ import json
 import requests
 from typing import Optional
 from .base import BaseExtractor, ExtractionResult
+from ..models.base import BoundingBox
 from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
 
 class VisionExtractor(BaseExtractor):
@@ -78,7 +79,12 @@ class VisionExtractor(BaseExtractor):
                 TextBlock(
                     document_id=doc_id,
                     page_number=page_number,
-                    bbox=tuple(b.get("bbox", [0,0,0,0])),
+                    bbox=BoundingBox(
+                        x0=b.get("bbox", [0,0,0,0])[0],
+                        y0=b.get("bbox", [0,0,0,0])[1],
+                        x1=b.get("bbox", [0,0,0,0])[2],
+                        y1=b.get("bbox", [0,0,0,0])[3]
+                    ),
                     content_hash=hashlib.md5(b.get("text", "").encode()).hexdigest(),
                     text=b.get("text", "")
                 ) for b in extracted_data.get("text_blocks", [])
@@ -88,7 +94,12 @@ class VisionExtractor(BaseExtractor):
                 Table(
                     document_id=doc_id,
                     page_number=page_number,
-                    bbox=tuple(t.get("bbox", [0,0,0,0])),
+                    bbox=BoundingBox(
+                        x0=t.get("bbox", [0,0,0,0])[0],
+                        y0=t.get("bbox", [0,0,0,0])[1],
+                        x1=t.get("bbox", [0,0,0,0])[2],
+                        y1=t.get("bbox", [0,0,0,0])[3]
+                    ),
                     content_hash=hashlib.md5(str(t).encode()).hexdigest(),
                     headers=t.get("headers", []),
                     rows=t.get("rows", [])
@@ -99,7 +110,12 @@ class VisionExtractor(BaseExtractor):
                 Figure(
                     document_id=doc_id,
                     page_number=page_number,
-                    bbox=tuple(f.get("bbox", [0,0,0,0])),
+                    bbox=BoundingBox(
+                        x0=f.get("bbox", [0,0,0,0])[0],
+                        y0=f.get("bbox", [0,0,0,0])[1],
+                        x1=f.get("bbox", [0,0,0,0])[2],
+                        y1=f.get("bbox", [0,0,0,0])[3]
+                    ),
                     content_hash=hashlib.md5(str(f).encode()).hexdigest(),
                     caption=f.get("caption")
                 ) for f in extracted_data.get("figures", [])

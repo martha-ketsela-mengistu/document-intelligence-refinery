@@ -3,6 +3,7 @@ import pdfplumber
 import hashlib
 from typing import Optional, List
 from .base import BaseExtractor, ExtractionResult
+from ..models.base import BoundingBox
 from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
 
 class FastTextExtractor(BaseExtractor):
@@ -48,7 +49,7 @@ class FastTextExtractor(BaseExtractor):
                     if table_data and len(table_data) > 0:
                         headers = table_data[0]
                         rows = table_data[1:] if len(table_data) > 1 else []
-                        bbox = (t.bbox[0], t.bbox[1], t.bbox[2], t.bbox[3])
+                        bbox = BoundingBox(x0=t.bbox[0], y0=t.bbox[1], x1=t.bbox[2], y1=t.bbox[3])
                         content = f"{headers}\n{rows}"
                         h = hashlib.md5(content.encode()).hexdigest()
                         
@@ -64,7 +65,7 @@ class FastTextExtractor(BaseExtractor):
                 # Extract Figures (images)
                 figures = []
                 for i, img in enumerate(page.images):
-                    bbox = (img['x0'], img['top'], img['x1'], img['bottom'])
+                    bbox = BoundingBox(x0=img['x0'], y0=img['top'], x1=img['x1'], y1=img['bottom'])
                     figures.append(Figure(
                         document_id=doc_id,
                         page_number=page_number,
@@ -115,7 +116,7 @@ class FastTextExtractor(BaseExtractor):
         top = min([w['top'] for w in words])
         x1 = max([w['x1'] for w in words])
         bottom = max([w['bottom'] for w in words])
-        bbox = (x0, top, x1, bottom)
+        bbox = BoundingBox(x0=x0, y0=top, x1=x1, y1=bottom)
         h = hashlib.md5(text.encode()).hexdigest()
         return TextBlock(
             document_id=doc_id,

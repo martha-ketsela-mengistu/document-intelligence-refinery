@@ -4,6 +4,7 @@ from typing import Optional
 from docling.datamodel.base_models import InputFormat
 from docling.document_converter import DocumentConverter
 from .base import BaseExtractor, ExtractionResult
+from ..models.base import BoundingBox
 from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
 
 class LayoutExtractor(BaseExtractor):
@@ -85,10 +86,10 @@ class LayoutExtractor(BaseExtractor):
                 error=str(e)
             )
 
-    def _get_bbox(self, element):
+    def _get_bbox(self, element) -> BoundingBox:
         # Docling prov contains location info
         if hasattr(element, 'prov') and element.prov:
             p = element.prov[0]
             if hasattr(p, 'bbox'):
-                return (p.bbox.l, p.bbox.t, p.bbox.r, p.bbox.b)
-        return (0.0, 0.0, 0.0, 0.0)
+                return BoundingBox(x0=p.bbox.l, y0=p.bbox.t, x1=p.bbox.r, y1=p.bbox.b)
+        return BoundingBox(x0=0.0, y0=0.0, x1=0.0, y1=0.0)
