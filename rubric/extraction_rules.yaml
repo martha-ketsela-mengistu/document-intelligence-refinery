@@ -10,6 +10,9 @@ strategy_a:
 escalation:
   strategy_order: [fast_text, layout_aware, vision_augmented]
   per_document_vlm_cap_usd: 2.0
+  ledger_path: .refinery/extraction_ledger.jsonl
+  max_retries: 3
+  min_confidence_threshold: 0.6
 
 chunking_constitution:
   table_cell_split: false
