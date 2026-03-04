@@ -6,9 +6,10 @@ from ..models.triage import (
     DocumentProfile, PageProfile, OriginType, LayoutComplexity, 
     DomainHint, ExtractionCostTier, LanguageInfo
 )
+from ..strategies.classifier import DomainClassifier, KeywordDomainClassifier
 
 class TriageAgent:
-    def __init__(self, extraction_rules: Optional[Dict[str, Any]] = None):
+    def __init__(self, extraction_rules: Optional[Dict[str, Any]] = None, domain_classifier: Optional[DomainClassifier] = None):
         self.rules = {
             "density_threshold": 0.001,
             "image_ratio_threshold": 0.5,
@@ -16,6 +17,7 @@ class TriageAgent:
             "multi_column_gap_threshold": 30,
             "table_line_threshold": 5,
         }
+        self.classifier = domain_classifier or KeywordDomainClassifier()
         if extraction_rules:
             # Map specific YAML structure to internal keys
             if "strategy_a" in extraction_rules:
@@ -47,7 +49,7 @@ class TriageAgent:
         doc_profile = self._summarize_document(document_id, page_profiles)
         
         # Determine domain hint from aggregated text
-        doc_profile.domain_hint = self.classify_domain_hint(all_text)
+        doc_profile.domain_hint = self.classifier.classify(all_text)
         
         return doc_profile
 
@@ -145,17 +147,6 @@ class TriageAgent:
             return True
         return False
 
-    def classify_domain_hint(self, text: str) -> DomainHint:
-        text_lower = text.lower()
-        if any(w in text_lower for w in ["revenue", "financial", "bank", "audit", "tax", "fiscal"]):
-            return DomainHint.FINANCIAL
-        if any(w in text_lower for w in ["legal", "court", "compliance", "law", "article", "section"]):
-            return DomainHint.LEGAL
-        if any(w in text_lower for w in ["technical", "specification", "architecture", "engineering", "manual"]):
-            return DomainHint.TECHNICAL
-        if any(w in text_lower for w in ["medical", "health", "patient", "clinical", "hospital"]):
-            return DomainHint.MEDICAL
-        return DomainHint.GENERAL
 
     def calculate_estimated_cost_per_page(self, origin: OriginType, complexity: LayoutComplexity, density: float) -> ExtractionCostTier:
         # Scanned images might be extractable with layout models (Strategy B) first.

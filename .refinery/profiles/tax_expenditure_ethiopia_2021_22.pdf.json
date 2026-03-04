@@ -1,0 +1,854 @@
+{
+  "document_id": "tax_expenditure_ethiopia_2021_22.pdf",
+  "overall_origin_type": "native_digital",
+  "overall_layout_complexity": "table_heavy",
+  "overall_estimated_cost": "needs_layout_model",
+  "domain_hint": "financial",
+  "language": {
+    "code": "en",
+    "confidence": 0.9
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0002415265507670094,
+      "image_area_ratio": 0.025135728020938563,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 121,
+        "image_count": 1,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 2,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0014212140838521547,
+      "image_area_ratio": 0.017963617056784176,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 712,
+        "image_count": 1,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 3,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.005770688084854746,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2891,
+        "image_count": 0,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 4,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0053974197791239135,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2704,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 5,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0031019195032391126,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1554,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 6,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.005135932356392688,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2573,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 7,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.004081998316682101,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2045,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 8,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0014810966997448015,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 742,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 9,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.00535550194799906,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2683,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 10,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.005756715474479795,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2884,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 11,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.004920354939179159,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2465,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 12,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.004525129674287689,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2267,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 13,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.00502415147339308,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2517,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 14,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.004133896583789062,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2071,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 15,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0027086903255440645,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1357,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 16,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.003367399100363181,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1687,
+        "image_count": 0,
+        "rect_count": 21
+      }
+    },
+    {
+      "page_number": 17,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004173818327717493,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2091,
+        "image_count": 0,
+        "rect_count": 13
+      }
+    },
+    {
+      "page_number": 18,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004966264944696855,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2488,
+        "image_count": 0,
+        "rect_count": 191
+      }
+    },
+    {
+      "page_number": 19,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.003660823918237151,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1834,
+        "image_count": 0,
+        "rect_count": 421
+      }
+    },
+    {
+      "page_number": 20,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0027346394590975448,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1370,
+        "image_count": 0,
+        "rect_count": 420
+      }
+    },
+    {
+      "page_number": 21,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0026907255407762703,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1348,
+        "image_count": 0,
+        "rect_count": 137
+      }
+    },
+    {
+      "page_number": 22,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.005998242025246805,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3005,
+        "image_count": 0,
+        "rect_count": 5
+      }
+    },
+    {
+      "page_number": 23,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004654875342055091,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2332,
+        "image_count": 0,
+        "rect_count": 29
+      }
+    },
+    {
+      "page_number": 24,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0031278686367925933,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1567,
+        "image_count": 0,
+        "rect_count": 17
+      }
+    },
+    {
+      "page_number": 25,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004413348791288081,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2211,
+        "image_count": 0,
+        "rect_count": 439
+      }
+    },
+    {
+      "page_number": 26,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0036588278310407296,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1833,
+        "image_count": 0,
+        "rect_count": 764
+      }
+    },
+    {
+      "page_number": 27,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0031637982063281813,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1585,
+        "image_count": 0,
+        "rect_count": 67
+      }
+    },
+    {
+      "page_number": 28,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0019900989348323006,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 997,
+        "image_count": 0,
+        "rect_count": 21
+      }
+    },
+    {
+      "page_number": 29,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0020419972019392616,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1023,
+        "image_count": 0,
+        "rect_count": 17
+      }
+    },
+    {
+      "page_number": 30,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004056049183128621,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2032,
+        "image_count": 0,
+        "rect_count": 342
+      }
+    },
+    {
+      "page_number": 31,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0029282599171504367,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1467,
+        "image_count": 0,
+        "rect_count": 618
+      }
+    },
+    {
+      "page_number": 32,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.006163917262549794,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3088,
+        "image_count": 0,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 33,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0030879468928641618,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1547,
+        "image_count": 0,
+        "rect_count": 13
+      }
+    },
+    {
+      "page_number": 34,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0017864980407973012,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 895,
+        "image_count": 0,
+        "rect_count": 17
+      }
+    },
+    {
+      "page_number": 35,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.003215696473435142,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1611,
+        "image_count": 0,
+        "rect_count": 242
+      }
+    },
+    {
+      "page_number": 36,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0031897473398816616,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1598,
+        "image_count": 0,
+        "rect_count": 426
+      }
+    },
+    {
+      "page_number": 37,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002057965899510634,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1031,
+        "image_count": 0,
+        "rect_count": 8
+      }
+    },
+    {
+      "page_number": 38,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002227633311206467,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1116,
+        "image_count": 0,
+        "rect_count": 17
+      }
+    },
+    {
+      "page_number": 39,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0030879468928641618,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1547,
+        "image_count": 0,
+        "rect_count": 147
+      }
+    },
+    {
+      "page_number": 40,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0021018798178319086,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1053,
+        "image_count": 0,
+        "rect_count": 237
+      }
+    },
+    {
+      "page_number": 41,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0048524879745008255,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2431,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 42,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.001047945778121322,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 525,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 43,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.003804542196379504,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1906,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 44,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.003395344321113083,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1701,
+        "image_count": 0,
+        "rect_count": 19
+      }
+    },
+    {
+      "page_number": 45,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.003840471765915092,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1924,
+        "image_count": 0,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 46,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.00397820178246818,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1993,
+        "image_count": 0,
+        "rect_count": 31
+      }
+    },
+    {
+      "page_number": 47,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0028104907725615643,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1408,
+        "image_count": 0,
+        "rect_count": 12
+      }
+    },
+    {
+      "page_number": 48,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0013333862472096056,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 668,
+        "image_count": 0,
+        "rect_count": 12
+      }
+    },
+    {
+      "page_number": 49,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.003962233084896807,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1985,
+        "image_count": 0,
+        "rect_count": 630
+      }
+    },
+    {
+      "page_number": 50,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004992214078250335,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2501,
+        "image_count": 0,
+        "rect_count": 1491
+      }
+    },
+    {
+      "page_number": 51,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004295579646699209,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2152,
+        "image_count": 0,
+        "rect_count": 1160
+      }
+    },
+    {
+      "page_number": 52,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0036089256511301904,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1808,
+        "image_count": 0,
+        "rect_count": 1232
+      }
+    },
+    {
+      "page_number": 53,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0037586321908618077,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1883,
+        "image_count": 0,
+        "rect_count": 809
+      }
+    },
+    {
+      "page_number": 54,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0037626243652546507,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1885,
+        "image_count": 0,
+        "rect_count": 758
+      }
+    },
+    {
+      "page_number": 55,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0026587881456335252,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1332,
+        "image_count": 0,
+        "rect_count": 581
+      }
+    },
+    {
+      "page_number": 56,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0032556182173635734,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1631,
+        "image_count": 0,
+        "rect_count": 666
+      }
+    },
+    {
+      "page_number": 57,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0033234851820419064,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1665,
+        "image_count": 0,
+        "rect_count": 997
+      }
+    },
+    {
+      "page_number": 58,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0019362045805289185,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 970,
+        "image_count": 0,
+        "rect_count": 489
+      }
+    },
+    {
+      "page_number": 59,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.004099963101449895,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2054,
+        "image_count": 0,
+        "rect_count": 21
+      }
+    },
+    {
+      "page_number": 60,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0010758909988712237,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 539,
+        "image_count": 0,
+        "rect_count": 9
+      }
+    }
+  ],
+  "metadata": {}
+}
