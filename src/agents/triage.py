@@ -7,6 +7,9 @@ from ..models.triage import (
     DomainHint, ExtractionCostTier, LanguageInfo
 )
 from ..strategies.classifier import DomainClassifier, KeywordDomainClassifier
+from ..utils.logging_utils import get_logger
+
+logger = get_logger(__name__)
 
 class TriageAgent:
     def __init__(self, extraction_rules: Optional[Dict[str, Any]] = None, domain_classifier: Optional[DomainClassifier] = None):
@@ -35,14 +38,18 @@ class TriageAgent:
         if not document_id:
             document_id = os.path.basename(file_path)
 
+        logger.info(f"Starting triage for document: {document_id} ({file_path})")
         page_profiles = []
         all_text = ""
         with pdfplumber.open(file_path) as pdf:
+            total_pages = len(pdf.pages)
+            logger.info(f"Extracting profiles for {total_pages} pages...")
             for i, page in enumerate(pdf.pages):
                 page_text = page.extract_text() or ""
                 all_text += page_text + "\n"
                 
                 page_profile = self.triage_page(page, i + 1)
+                logger.debug(f"Page {i+1}/{total_pages}: origin={page_profile.origin_type}, complexity={page_profile.layout_complexity}, cost={page_profile.estimated_extraction_cost}")
                 page_profiles.append(page_profile)
 
         # Aggregate document-level summary
@@ -50,6 +57,7 @@ class TriageAgent:
         
         # Determine domain hint from aggregated text
         doc_profile.domain_hint = self.classifier.classify(all_text)
+        logger.info(f"Triage complete for {document_id}. Overall: origin={doc_profile.overall_origin_type}, complexity={doc_profile.overall_layout_complexity}, domain={doc_profile.domain_hint}")
         
         return doc_profile
 

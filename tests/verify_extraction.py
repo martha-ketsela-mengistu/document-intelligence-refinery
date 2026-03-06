@@ -4,6 +4,9 @@ import json
 from src.agents.triage import TriageAgent
 from src.agents.extractor import ExtractionRouter
 from src.models.triage import DocumentProfile
+from src.utils.logging_utils import get_logger
+
+logger = get_logger("verify_pipeline")
 
 def verify_extraction_pipeline():
     # Load rules
@@ -18,26 +21,19 @@ def verify_extraction_pipeline():
     # pdf_path = "data/Security_Vulnerability_Disclosure_Standard_Procedure_1.pdf"
     pdf_path = "data/2013-E.C-Assigned-regular-budget-and-expense.pdf"
     if not os.path.exists(pdf_path):
-        print(f"Error: {pdf_path} not found.")
+        logger.error(f"Error: {pdf_path} not found.")
         return
 
-    print(f"Step 1: Triaging {pdf_path}...")
     profile = triage_agent.triage_document(pdf_path)
-    print(f"✓ Document profiled: {profile.overall_origin_type}")
     
     # Extract all pages for verification
     for page_prof in profile.pages:
-        print(f"Step 2: Extracting page {page_prof.page_number}...")
         result = extractor_router.extract_page_with_escalation(
             pdf_path, 
             page_prof.page_number, 
             profile.document_id, 
             page_prof.estimated_extraction_cost
         )
-    
-        print(f"✓ Extraction result: strategy={result.strategy_used}, confidence={result.confidence_score}")
-        if result.error:
-            print(f"⚠ Extraction error: {result.error}")
         
         print("\n--- Extracted JSON Content ---")
         print(result.content.model_dump_json(indent=2))

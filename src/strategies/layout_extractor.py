@@ -5,7 +5,12 @@ from docling.datamodel.base_models import InputFormat
 from docling.document_converter import DocumentConverter
 from .base import BaseExtractor, ExtractionResult
 from ..models.base import BoundingBox
+from .base import BaseExtractor, ExtractionResult
+from ..models.base import BoundingBox
 from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
+from ..utils.logging_utils import get_logger
+
+logger = get_logger(__name__)
 
 class LayoutExtractor(BaseExtractor):
     def __init__(self, rules: Optional[dict] = None):
@@ -25,6 +30,7 @@ class LayoutExtractor(BaseExtractor):
             # For this MVP, we'll convert and then filter for the page
             result = self.converter.convert(file_path, page_range=(page_number, page_number))
             doc = result.document
+            logger.debug(f"[{doc_id}] LayoutAware: Extracting page {page_number}")
             
             text_blocks = []
             tables = []
@@ -65,6 +71,8 @@ class LayoutExtractor(BaseExtractor):
                 figures=figures,
                 reading_order=[b.content_hash for b in text_blocks] + [t.content_hash for t in tables]
             )
+            
+            logger.info(f"[{doc_id}] LayoutAware Page {page_number}: Found {len(text_blocks)} text blocks, {len(tables)} tables. Confidence: 0.90")
             
             processing_time = time.time() - start_time
             return ExtractionResult(

@@ -8,7 +8,11 @@ from ..strategies.base import BaseExtractor, ExtractionResult
 from ..strategies.fast_text import FastTextExtractor
 from ..strategies.layout_extractor import LayoutExtractor
 from ..strategies.vision_extractor import VisionExtractor
+from ..strategies.vision_extractor import VisionExtractor
 from ..strategies.evaluator import HeuristicConfidenceEvaluator
+from ..utils.logging_utils import get_logger
+
+logger = get_logger(__name__)
 
 class ExtractionRouter:
     def __init__(self, rules: Optional[dict] = None):
@@ -33,13 +37,16 @@ class ExtractionRouter:
         os.makedirs(os.path.dirname(self.rules["ledger_path"]), exist_ok=True)
 
     def extract_document(self, file_path: str, profile: DocumentProfile) -> List[ExtractionResult]:
+        logger.info(f"Extracting document {profile.document_id} with {len(profile.pages)} pages...")
         results = []
         for page_prof in profile.pages:
             result = self.extract_page_with_escalation(file_path, page_prof.page_number, profile.document_id, page_prof.estimated_extraction_cost)
             results.append(result)
+        logger.info(f"Document extraction finished for {profile.document_id}.")
         return results
 
     def extract_page_with_escalation(self, file_path: str, page_number: int, document_id: str, preferred_tier: ExtractionCostTier) -> ExtractionResult:
+        logger.debug(f"Extracting Page {page_number} for {document_id} (Preferred Tier: {preferred_tier})")
         # Determine initial strategy based on tier
         strategy_chain = ["fast_text", "layout_aware", "vision_augmented"]
         
@@ -69,14 +76,18 @@ class ExtractionRouter:
                 self._log_to_ledger(result)
                 
                 if result.confidence_score >= self.rules["min_confidence_threshold"] and not result.error:
+                    logger.info(f"Page {page_number}: Extraction successful with strategy '{strategy_name}' (Confidence: {result.confidence_score:.2f})")
                     return result
                 
+                logger.warning(f"Page {page_number}: Strategy '{strategy_name}' failed or low confidence ({result.confidence_score:.2f}). Retry {current_attempt + 1}/{self.rules['max_retries']}")
                 current_attempt += 1
                 last_result = result
             
             # If we reach here, this strategy failed or low confidence, move to next in chain
+            logger.info(f"Page {page_number}: Escalating to next strategy in chain...")
             current_attempt = 0 # Reset retries for next strategy
 
+        logger.error(f"Page {page_number}: All strategies failed to reach confidence threshold for {document_id}")
         return last_result or ExtractionResult(
             extraction_id=f"failed_{document_id}_{page_number}",
             document_id=document_id,
