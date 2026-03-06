@@ -8,3 +8,4 @@ docs/
 .env
 data/
 __pycache__/
+.refinery/logs/
