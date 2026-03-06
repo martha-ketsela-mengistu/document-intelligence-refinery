@@ -57,3 +57,5 @@
 {"doc_id": "2013-E.C-Assigned-regular-budget-and-expense.pdf", "page_number": 1, "strategy_used": "vision_augmented", "confidence": 0.5, "processing_time": 39.03588557243347, "cost_estimate": 0.3903588557243347, "error": null}
 {"doc_id": "2013-E.C-Assigned-regular-budget-and-expense.pdf", "page_number": 2, "strategy_used": "layout_aware", "confidence": 0.3, "processing_time": 76.46546459197998, "cost_estimate": 0.07646546459197998, "error": null}
 {"doc_id": "2013-E.C-Assigned-regular-budget-and-expense.pdf", "page_number": 2, "strategy_used": "vision_augmented", "confidence": 0.5, "processing_time": 102.7674241065979, "cost_estimate": 1.027674241065979, "error": null}
+{"doc_id": "2013-E.C-Assigned-regular-budget-and-expense.pdf", "page_number": 1, "strategy_used": "layout_aware", "confidence": 0.2, "processing_time": 66.06336307525635, "cost_estimate": 0.06606336307525634, "error": null}
+{"doc_id": "2013-E.C-Assigned-regular-budget-and-expense.pdf", "page_number": 1, "strategy_used": "vision_augmented", "confidence": 0.8, "processing_time": 81.3301465511322, "cost_estimate": 0.813301465511322, "error": null}

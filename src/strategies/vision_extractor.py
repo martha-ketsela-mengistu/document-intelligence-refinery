@@ -8,7 +8,12 @@ from typing import Optional
 from ollama import Client
 from .base import BaseExtractor, ExtractionResult
 from ..models.base import BoundingBox
+from .base import BaseExtractor, ExtractionResult
+from ..models.base import BoundingBox
 from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
+from ..utils.logging_utils import get_logger
+
+logger = get_logger(__name__)
 
 class VisionExtractor(BaseExtractor):
     def __init__(self, rules: Optional[dict] = None):
@@ -28,6 +33,7 @@ class VisionExtractor(BaseExtractor):
         
         # Budget Guard
         if self.pages_processed >= self.rules["page_limit"]:
+            logger.warning(f"[{doc_id}] Vision: Page limit reached ({self.rules['page_limit']}). Skipping page {page_number}.")
             return ExtractionResult(
                 extraction_id=f"vision_{doc_id}_{page_number}",
                 document_id=doc_id,
@@ -58,6 +64,7 @@ class VisionExtractor(BaseExtractor):
             }
             """
             
+            logger.info(f"[{doc_id}] Vision: Sending page {page_number} to VLM ({self.rules['model']})...")
             response = self.client.generate(
                 model=self.rules["model"],
                 prompt=prompt,
@@ -125,6 +132,8 @@ class VisionExtractor(BaseExtractor):
 
             self.pages_processed += 1
             processing_time = time.time() - start_time
+            
+            logger.info(f"[{doc_id}] Vision Page {page_number}: Extracted {len(text_blocks)} text blocks, {len(tables)} tables, {len(figures)} figures. Confidence: 0.80")
             
             return ExtractionResult(
                 extraction_id=f"vision_{doc_id}_{page_number}",

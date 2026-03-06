@@ -4,7 +4,12 @@ import hashlib
 from typing import Optional, List
 from .base import BaseExtractor, ExtractionResult
 from ..models.base import BoundingBox
+from .base import BaseExtractor, ExtractionResult
+from ..models.base import BoundingBox
 from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
+from ..utils.logging_utils import get_logger
+
+logger = get_logger(__name__)
 
 class FastTextExtractor(BaseExtractor):
     def __init__(self, rules: Optional[dict] = None):
@@ -25,6 +30,7 @@ class FastTextExtractor(BaseExtractor):
                     raise ValueError(f"Page {page_number} out of range (max {len(pdf.pages)})")
                 
                 page = pdf.pages[page_number - 1]
+                logger.debug(f"[{doc_id}] FastText: Extracting page {page_number}")
                 
                 # Extract Text Blocks (simplistic grouping by lines)
                 text_blocks = []
@@ -97,6 +103,8 @@ class FastTextExtractor(BaseExtractor):
 
                 # Confidence Scoring
                 confidence = self._calculate_confidence(page, content)
+                
+                logger.info(f"[{doc_id}] FastText Page {page_number}: Found {len(text_blocks)} text blocks, {len(tables)} tables, {len(figures)} figures. Confidence: {confidence:.2f}")
                 
                 processing_time = time.time() - start_time
                 return ExtractionResult(
