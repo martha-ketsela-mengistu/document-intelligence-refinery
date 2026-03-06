@@ -11,8 +11,15 @@ escalation:
   strategy_order: [fast_text, layout_aware, vision_augmented]
   per_document_vlm_cap_usd: 2.0
   ledger_path: .refinery/extraction_ledger.jsonl
-  max_retries: 3
+  max_retries: 1
   min_confidence_threshold: 0.6
+  # Strategy-specific overrides
+  strategy_a:
+    cost_per_second: 0.0001
+  strategy_b:
+    cost_per_second: 0.001
+  strategy_c:
+    cost_per_second: 0.01
 
 chunking_constitution:
   table_cell_split: false

@@ -8,6 +8,7 @@ from ..strategies.base import BaseExtractor, ExtractionResult
 from ..strategies.fast_text import FastTextExtractor
 from ..strategies.layout_extractor import LayoutExtractor
 from ..strategies.vision_extractor import VisionExtractor
+from ..strategies.evaluator import HeuristicConfidenceEvaluator
 
 class ExtractionRouter:
     def __init__(self, rules: Optional[dict] = None):
@@ -27,6 +28,7 @@ class ExtractionRouter:
             "layout_aware": LayoutExtractor(self.rules.get("strategy_b")),
             "vision_augmented": VisionExtractor(self.rules.get("strategy_c"))
         }
+        self.evaluator = HeuristicConfidenceEvaluator()
 
         os.makedirs(os.path.dirname(self.rules["ledger_path"]), exist_ok=True)
 
@@ -56,6 +58,14 @@ class ExtractionRouter:
             
             while current_attempt < self.rules["max_retries"]:
                 result = extractor.extract_page(file_path, page_number, document_id)
+                
+                # Post-extraction confidence evaluation (Text Quality)
+                eval_score = self.evaluator.evaluate(result.content)
+                # Combine extractor's internal confidence with heuristic evaluation
+                # We take the minimum to be conservative
+                final_confidence = min(result.confidence_score, eval_score)
+                result.confidence_score = final_confidence
+                
                 self._log_to_ledger(result)
                 
                 if result.confidence_score >= self.rules["min_confidence_threshold"] and not result.error:

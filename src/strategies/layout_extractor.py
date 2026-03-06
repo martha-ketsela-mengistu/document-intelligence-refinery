@@ -9,7 +9,10 @@ from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
 
 class LayoutExtractor(BaseExtractor):
     def __init__(self, rules: Optional[dict] = None):
-        self.rules = rules or {}
+        defaults = {
+            "cost_per_second": 0.001
+        }
+        self.rules = {**defaults, **(rules or {})}
         self.converter = DocumentConverter()
 
     def extract_page(self, file_path: str, page_number: int, document_id: Optional[str] = None) -> ExtractionResult:
@@ -20,7 +23,7 @@ class LayoutExtractor(BaseExtractor):
             # Docling typically converts the whole document
             # But for our pipeline, we might want to convert specific pages or use its internal representation
             # For this MVP, we'll convert and then filter for the page
-            result = self.converter.convert(file_path)
+            result = self.converter.convert(file_path, page_range=(page_number, page_number))
             doc = result.document
             
             text_blocks = []
@@ -71,7 +74,8 @@ class LayoutExtractor(BaseExtractor):
                 strategy_used="layout_aware",
                 content=content,
                 confidence_score=0.9, # Docling is generally high confidence for layout
-                processing_time=processing_time
+                processing_time=processing_time,
+                cost_estimate=processing_time * self.rules.get("cost_per_second", 0.001)
             )
 
         except Exception as e:
@@ -91,5 +95,10 @@ class LayoutExtractor(BaseExtractor):
         if hasattr(element, 'prov') and element.prov:
             p = element.prov[0]
             if hasattr(p, 'bbox'):
-                return BoundingBox(x0=p.bbox.l, y0=p.bbox.t, x1=p.bbox.r, y1=p.bbox.b)
+                # Normalize coordinates to ensure x0 <= x1 and y0 <= y1
+                x0 = min(p.bbox.l, p.bbox.r)
+                y0 = min(p.bbox.t, p.bbox.b)
+                x1 = max(p.bbox.l, p.bbox.r)
+                y1 = max(p.bbox.t, p.bbox.b)
+                return BoundingBox(x0=x0, y0=y0, x1=x1, y1=y1)
         return BoundingBox(x0=0.0, y0=0.0, x1=0.0, y1=0.0)

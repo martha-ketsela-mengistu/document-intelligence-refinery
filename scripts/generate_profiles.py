@@ -12,7 +12,7 @@ def generate_sample_profile():
     agent = TriageAgent(extraction_rules=rules)
     
     # Target PDF
-    pdf_path = "data/Consumer Price Index June 2025.pdf"
+    pdf_path = "data/Security_Vulnerability_Disclosure_Standard_Procedure_2.pdf"
     if not os.path.exists(pdf_path):
         print(f"Error: {pdf_path} not found.")
         return
