@@ -2,21 +2,24 @@ import os
 import time
 import hashlib
 import json
-import requests
+import base64
+import fitz
 from typing import Optional
+from ollama import Client
 from .base import BaseExtractor, ExtractionResult
 from ..models.base import BoundingBox
 from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
 
 class VisionExtractor(BaseExtractor):
     def __init__(self, rules: Optional[dict] = None):
-        self.rules = rules or {
-            "ollama_url": os.getenv("OLLAMA_API_URL", "https://api.ollama.com/v1/chat/completions"),
-            "model": "llama3.2-vision",
+        defaults = {
+            "ollama_host": os.getenv("OLLAMA_HOST", "https://ollama.com"),
+            "model": "qwen3-vl:235b-instruct",
             "page_limit": 10,
-            "cost_per_page": 0.01
+            "cost_per_second": 0.01 # VLMs are expensive in compute time
         }
-        self.api_key = os.getenv("OLLAMA_API_KEY")
+        self.rules = {**defaults, **(rules or {})}
+        self.client = Client(host=self.rules["ollama_host"])
         self.pages_processed = 0
 
     def extract_page(self, file_path: str, page_number: int, document_id: Optional[str] = None) -> ExtractionResult:
@@ -55,22 +58,13 @@ class VisionExtractor(BaseExtractor):
             }
             """
             
-            headers = {}
-            if self.api_key:
-                headers["Authorization"] = f"Bearer {self.api_key}"
-
-            response = requests.post(
-                self.rules["ollama_url"],
-                headers=headers,
-                json={
-                    "model": self.rules["model"],
-                    "prompt": prompt,
-                    "stream": False,
-                    "images": [image_data]
-                }
+            response = self.client.generate(
+                model=self.rules["model"],
+                prompt=prompt,
+                images=[image_data],
+                stream=False
             )
-            response.raise_for_status()
-            raw_output = response.json().get("response", "")
+            raw_output = response.get("response", "")
             
             # Parse JSON from response
             extracted_data = self._parse_json(raw_output)
@@ -80,10 +74,10 @@ class VisionExtractor(BaseExtractor):
                     document_id=doc_id,
                     page_number=page_number,
                     bbox=BoundingBox(
-                        x0=b.get("bbox", [0,0,0,0])[0],
-                        y0=b.get("bbox", [0,0,0,0])[1],
-                        x1=b.get("bbox", [0,0,0,0])[2],
-                        y1=b.get("bbox", [0,0,0,0])[3]
+                        x0=min(b.get("bbox", [0,0,0,0])[0], b.get("bbox", [0,0,0,0])[2]),
+                        y0=min(b.get("bbox", [0,0,0,0])[1], b.get("bbox", [0,0,0,0])[3]),
+                        x1=max(b.get("bbox", [0,0,0,0])[0], b.get("bbox", [0,0,0,0])[2]),
+                        y1=max(b.get("bbox", [0,0,0,0])[1], b.get("bbox", [0,0,0,0])[3])
                     ),
                     content_hash=hashlib.md5(b.get("text", "").encode()).hexdigest(),
                     text=b.get("text", "")
@@ -95,10 +89,10 @@ class VisionExtractor(BaseExtractor):
                     document_id=doc_id,
                     page_number=page_number,
                     bbox=BoundingBox(
-                        x0=t.get("bbox", [0,0,0,0])[0],
-                        y0=t.get("bbox", [0,0,0,0])[1],
-                        x1=t.get("bbox", [0,0,0,0])[2],
-                        y1=t.get("bbox", [0,0,0,0])[3]
+                        x0=min(t.get("bbox", [0,0,0,0])[0], t.get("bbox", [0,0,0,0])[2]),
+                        y0=min(t.get("bbox", [0,0,0,0])[1], t.get("bbox", [0,0,0,0])[3]),
+                        x1=max(t.get("bbox", [0,0,0,0])[0], t.get("bbox", [0,0,0,0])[2]),
+                        y1=max(t.get("bbox", [0,0,0,0])[1], t.get("bbox", [0,0,0,0])[3])
                     ),
                     content_hash=hashlib.md5(str(t).encode()).hexdigest(),
                     headers=t.get("headers", []),
@@ -111,10 +105,10 @@ class VisionExtractor(BaseExtractor):
                     document_id=doc_id,
                     page_number=page_number,
                     bbox=BoundingBox(
-                        x0=f.get("bbox", [0,0,0,0])[0],
-                        y0=f.get("bbox", [0,0,0,0])[1],
-                        x1=f.get("bbox", [0,0,0,0])[2],
-                        y1=f.get("bbox", [0,0,0,0])[3]
+                        x0=min(f.get("bbox", [0,0,0,0])[0], f.get("bbox", [0,0,0,0])[2]),
+                        y0=min(f.get("bbox", [0,0,0,0])[1], f.get("bbox", [0,0,0,0])[3]),
+                        x1=max(f.get("bbox", [0,0,0,0])[0], f.get("bbox", [0,0,0,0])[2]),
+                        y1=max(f.get("bbox", [0,0,0,0])[1], f.get("bbox", [0,0,0,0])[3])
                     ),
                     content_hash=hashlib.md5(str(f).encode()).hexdigest(),
                     caption=f.get("caption")
@@ -140,7 +134,7 @@ class VisionExtractor(BaseExtractor):
                 content=content,
                 confidence_score=0.8, # VLM confidence
                 processing_time=processing_time,
-                cost_estimate=self.rules["cost_per_page"]
+                cost_estimate=processing_time * self.rules.get("cost_per_second", 0.01)
             )
 
         except Exception as e:
@@ -156,8 +150,16 @@ class VisionExtractor(BaseExtractor):
             )
 
     def _get_page_image_base64(self, file_path, page_number):
-        # Placeholder for PDF to Image conversion
-        return "BASE64_IMAGE_DATA"
+        """Convert a PDF page to a base64 encoded PNG image."""
+        doc = fitz.open(file_path)
+        try:
+            page = doc.load_page(page_number - 1)
+            # Use a higher matrix for better quality extraction if needed
+            pix = page.get_pixmap(matrix=fitz.Matrix(2, 2))
+            img_bytes = pix.tobytes("png")
+            return base64.b64encode(img_bytes).decode("utf-8")
+        finally:
+            doc.close()
 
     def _parse_json(self, text):
         try:

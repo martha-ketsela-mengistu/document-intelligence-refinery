@@ -8,10 +8,12 @@ from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
 
 class FastTextExtractor(BaseExtractor):
     def __init__(self, rules: Optional[dict] = None):
-        self.rules = rules or {
+        defaults = {
             "min_char_density": 0.001,
-            "accept_confidence_threshold": 0.6
+            "accept_confidence_threshold": 0.6,
+            "cost_per_second": 0.0001
         }
+        self.rules = {**defaults, **(rules or {})}
 
     def extract_page(self, file_path: str, page_number: int, document_id: Optional[str] = None) -> ExtractionResult:
         start_time = time.time()
@@ -49,7 +51,12 @@ class FastTextExtractor(BaseExtractor):
                     if table_data and len(table_data) > 0:
                         headers = table_data[0]
                         rows = table_data[1:] if len(table_data) > 1 else []
-                        bbox = BoundingBox(x0=t.bbox[0], y0=t.bbox[1], x1=t.bbox[2], y1=t.bbox[3])
+                        bbox = BoundingBox(
+                            x0=min(t.bbox[0], t.bbox[2]),
+                            y0=min(t.bbox[1], t.bbox[3]),
+                            x1=max(t.bbox[0], t.bbox[2]),
+                            y1=max(t.bbox[1], t.bbox[3])
+                        )
                         content = f"{headers}\n{rows}"
                         h = hashlib.md5(content.encode()).hexdigest()
                         
@@ -65,7 +72,12 @@ class FastTextExtractor(BaseExtractor):
                 # Extract Figures (images)
                 figures = []
                 for i, img in enumerate(page.images):
-                    bbox = BoundingBox(x0=img['x0'], y0=img['top'], x1=img['x1'], y1=img['bottom'])
+                    bbox = BoundingBox(
+                        x0=min(img['x0'], img['x1']),
+                        y0=min(img['top'], img['bottom']),
+                        x1=max(img['x0'], img['x1']),
+                        y1=max(img['top'], img['bottom'])
+                    )
                     figures.append(Figure(
                         document_id=doc_id,
                         page_number=page_number,
@@ -95,7 +107,7 @@ class FastTextExtractor(BaseExtractor):
                     content=content,
                     confidence_score=confidence,
                     processing_time=processing_time,
-                    cost_estimate=0.0
+                    cost_estimate=processing_time * self.rules.get("cost_per_second", 0.0001)
                 )
 
         except Exception as e:
