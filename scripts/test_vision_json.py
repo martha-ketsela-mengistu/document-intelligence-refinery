@@ -11,10 +11,10 @@ def test_vision_extraction():
     extractor = VisionExtractor()
     
     print(f"Testing Vision Extraction with Cloud Ollama...")
-    print(f"URL: {extractor.rules['ollama_url']}")
-    print(f"API Key present: {'Yes' if extractor.api_key else 'No'}")
+    print(f"ollama_host: {extractor.rules['ollama_host']}")
+    print(f"model: {extractor.rules['model']}")
     
-    pdf_path = "data/Security_Vulnerability_Disclosure_Standard_Procedure_1.pdf"
+    pdf_path = "data/2013-E.C-Assigned-regular-budget-and-expense.pdf"
     if not os.path.exists(pdf_path):
         print(f"Error: {pdf_path} not found.")
         return
