@@ -4,3 +4,106 @@
 {"action": "search", "metadata": {"query": "What are the allowed types of security research under this procedure?", "top_k": 3, "result_count": 3}, "duration": 0.24665522575378418, "timestamp": 1772872522.8725672}
 {"action": "ingestion", "metadata": {"ldu_count": 118}, "duration": 6.1648499965667725, "timestamp": 1772873957.9790206}
 {"action": "search", "metadata": {"query": "What are the allowed types of security research under this procedure?", "top_k": 3, "result_count": 3}, "duration": 0.2166891098022461, "timestamp": 1772873958.2107303}
+{"action": "ingestion", "metadata": {"ldu_count": 6}, "duration": 5.055044412612915, "timestamp": 1772876311.1748695}
+{"action": "ingestion", "metadata": {"ldu_count": 4}, "duration": 2.8604578971862793, "timestamp": 1772876731.7232406}
+{"action": "ingestion", "metadata": {"ldu_count": 4}, "duration": 3.129788398742676, "timestamp": 1772877129.480601}
+{"action": "ingestion", "metadata": {"ldu_count": 4}, "duration": 2.895890235900879, "timestamp": 1772877840.0315673}
+{"action": "ingestion", "metadata": {"ldu_count": 4}, "duration": 6.206729888916016, "timestamp": 1772879013.3491647}
+{"action": "ingestion", "metadata": {"ldu_count": 4}, "duration": 2.983247756958008, "timestamp": 1772879223.376521}
+{"action": "ingestion", "metadata": {"ldu_count": 4}, "duration": 4.062842607498169, "timestamp": 1772879519.5395868}
+{"action": "search", "metadata": {"query": "personnel services budget", "top_k": 5, "result_count": 5}, "duration": 1.587838888168335, "timestamp": 1772879551.9825249}
+{"action": "ingestion", "metadata": {"ldu_count": 4}, "duration": 3.106123447418213, "timestamp": 1772879805.1494887}
+{"action": "search", "metadata": {"query": "total assigned budget for personnel services", "top_k": 5, "result_count": 5}, "duration": 1.0877916812896729, "timestamp": 1772879833.5559525}
+{"action": "search", "metadata": {"query": "budget allocation for personnel services", "top_k": 5, "result_count": 5}, "duration": 0.09132575988769531, "timestamp": 1772879845.3151345}
+{"action": "search", "metadata": {"query": "total budget allocated for staff and personnel", "top_k": 5, "result_count": 5}, "duration": 0.0462498664855957, "timestamp": 1772879852.9230242}
+{"action": "ingestion", "metadata": {"ldu_count": 4}, "duration": 4.320858955383301, "timestamp": 1772880064.0814974}
+{"action": "search", "metadata": {"query": "total assigned budget for personnel services", "top_k": 5, "result_count": 5}, "duration": 0.4426863193511963, "timestamp": 1772880096.4863818}
+{"action": "search", "metadata": {"query": "personnel services budget", "top_k": 5, "result_count": 5}, "duration": 0.11858940124511719, "timestamp": 1772880098.655113}
+{"action": "search", "metadata": {"query": "budget allocation for personnel", "top_k": 5, "result_count": 5}, "duration": 0.02589893341064453, "timestamp": 1772880110.4024024}
+{"action": "search", "metadata": {"query": "personnel services financial allocation", "top_k": 5, "result_count": 5}, "duration": 0.05719876289367676, "timestamp": 1772880113.3225832}
+{"action": "search", "metadata": {"query": "total budget allocation", "top_k": 5, "result_count": 5}, "duration": 0.02218008041381836, "timestamp": 1772880118.0898652}
+{"action": "search", "metadata": {"query": "financial report personnel services", "top_k": 5, "result_count": 5}, "duration": 1.6129164695739746, "timestamp": 1772880122.1485317}
+{"action": "search", "metadata": {"query": "personnel expenses", "top_k": 5, "result_count": 5}, "duration": 1.0285394191741943, "timestamp": 1772880126.7364645}
+{"action": "search", "metadata": {"query": "budget for employee services", "top_k": 5, "result_count": 5}, "duration": 1.1919171810150146, "timestamp": 1772880131.4847784}
+{"action": "search", "metadata": {"query": "personnel services cost", "top_k": 5, "result_count": 5}, "duration": 0.2264573574066162, "timestamp": 1772880135.3321266}
+{"action": "search", "metadata": {"query": "financial allocation for staff", "top_k": 5, "result_count": 5}, "duration": 0.050241708755493164, "timestamp": 1772880138.0405917}
+{"action": "search", "metadata": {"query": "personnel cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.025125741958618164, "timestamp": 1772880142.6235454}
+{"action": "search", "metadata": {"query": "financial budget for personnel", "top_k": 5, "result_count": 5}, "duration": 0.02137160301208496, "timestamp": 1772880145.314286}
+{"action": "search", "metadata": {"query": "cost of personnel services", "top_k": 5, "result_count": 5}, "duration": 0.08101177215576172, "timestamp": 1772880150.1008978}
+{"action": "search", "metadata": {"query": "financial budget allocation", "top_k": 5, "result_count": 5}, "duration": 0.03915977478027344, "timestamp": 1772880153.2914157}
+{"action": "search", "metadata": {"query": "staff budget allocation", "top_k": 5, "result_count": 5}, "duration": 0.029976606369018555, "timestamp": 1772880156.1797843}
+{"action": "search", "metadata": {"query": "financial personnel expenses", "top_k": 5, "result_count": 5}, "duration": 0.043334007263183594, "timestamp": 1772880159.707026}
+{"action": "search", "metadata": {"query": "personnel services cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.027285337448120117, "timestamp": 1772880163.7377195}
+{"action": "search", "metadata": {"query": "financial budget for staff", "top_k": 5, "result_count": 5}, "duration": 0.02402353286743164, "timestamp": 1772880166.45281}
+{"action": "search", "metadata": {"query": "employee budget allocation", "top_k": 5, "result_count": 5}, "duration": 0.026352882385253906, "timestamp": 1772880169.9924695}
+{"action": "search", "metadata": {"query": "financial personnel budget", "top_k": 5, "result_count": 5}, "duration": 0.018585205078125, "timestamp": 1772880173.5653589}
+{"action": "search", "metadata": {"query": "personnel services financial cost", "top_k": 5, "result_count": 5}, "duration": 0.02531123161315918, "timestamp": 1772880176.601006}
+{"action": "search", "metadata": {"query": "financial budget for personnel services", "top_k": 5, "result_count": 5}, "duration": 0.026614904403686523, "timestamp": 1772880181.5525744}
+{"action": "search", "metadata": {"query": "staff cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.017654895782470703, "timestamp": 1772880184.6145034}
+{"action": "search", "metadata": {"query": "financial personnel cost", "top_k": 5, "result_count": 5}, "duration": 0.027057170867919922, "timestamp": 1772880187.5860705}
+{"action": "search", "metadata": {"query": "personnel services budget allocation", "top_k": 5, "result_count": 5}, "duration": 0.0324552059173584, "timestamp": 1772880191.939644}
+{"action": "search", "metadata": {"query": "financial budget for employee services", "top_k": 5, "result_count": 5}, "duration": 0.02586960792541504, "timestamp": 1772880195.7681727}
+{"action": "search", "metadata": {"query": "staff budget allocation for services", "top_k": 5, "result_count": 5}, "duration": 0.0231626033782959, "timestamp": 1772880198.505725}
+{"action": "search", "metadata": {"query": "financial personnel services cost", "top_k": 5, "result_count": 5}, "duration": 0.024377107620239258, "timestamp": 1772880201.572183}
+{"action": "search", "metadata": {"query": "personnel services financial allocation", "top_k": 5, "result_count": 5}, "duration": 0.0222628116607666, "timestamp": 1772880204.5585763}
+{"action": "search", "metadata": {"query": "financial budget for staff services", "top_k": 5, "result_count": 5}, "duration": 0.027405500411987305, "timestamp": 1772880207.9217682}
+{"action": "search", "metadata": {"query": "employee cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.023646831512451172, "timestamp": 1772880211.2113245}
+{"action": "search", "metadata": {"query": "financial personnel services budget", "top_k": 5, "result_count": 5}, "duration": 0.027427196502685547, "timestamp": 1772880215.4639318}
+{"action": "search", "metadata": {"query": "personnel services cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.023317813873291016, "timestamp": 1772880219.7679975}
+{"action": "search", "metadata": {"query": "financial budget for personnel services", "top_k": 5, "result_count": 5}, "duration": 0.026898860931396484, "timestamp": 1772880222.8125896}
+{"action": "search", "metadata": {"query": "staff cost allocation for services", "top_k": 5, "result_count": 5}, "duration": 0.03164815902709961, "timestamp": 1772880229.2393463}
+{"action": "search", "metadata": {"query": "financial personnel cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.020870208740234375, "timestamp": 1772880232.8918655}
+{"action": "search", "metadata": {"query": "personnel services budget cost", "top_k": 5, "result_count": 5}, "duration": 0.011444568634033203, "timestamp": 1772880240.2770903}
+{"action": "search", "metadata": {"query": "financial budget for employee services", "top_k": 5, "result_count": 5}, "duration": 0.01964712142944336, "timestamp": 1772880243.5547605}
+{"action": "search", "metadata": {"query": "staff budget allocation for personnel", "top_k": 5, "result_count": 5}, "duration": 0.020525217056274414, "timestamp": 1772880248.1876116}
+{"action": "search", "metadata": {"query": "financial personnel services cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.016109466552734375, "timestamp": 1772880251.421526}
+{"action": "search", "metadata": {"query": "personnel services financial cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.011845111846923828, "timestamp": 1772880254.9780803}
+{"action": "search", "metadata": {"query": "financial budget for staff services", "top_k": 5, "result_count": 5}, "duration": 0.01690983772277832, "timestamp": 1772880259.309562}
+{"action": "search", "metadata": {"query": "employee cost allocation for services", "top_k": 5, "result_count": 5}, "duration": 0.0164945125579834, "timestamp": 1772880269.3492358}
+{"action": "search", "metadata": {"query": "financial personnel services budget allocation", "top_k": 5, "result_count": 5}, "duration": 0.015228748321533203, "timestamp": 1772880272.6816626}
+{"action": "search", "metadata": {"query": "personnel services cost allocation for budget", "top_k": 5, "result_count": 5}, "duration": 0.020931482315063477, "timestamp": 1772880275.8854551}
+{"action": "search", "metadata": {"query": "financial budget for personnel services cost", "top_k": 5, "result_count": 5}, "duration": 0.019629240036010742, "timestamp": 1772880282.0580485}
+{"action": "search", "metadata": {"query": "staff cost allocation for personnel services", "top_k": 5, "result_count": 5}, "duration": 0.011764049530029297, "timestamp": 1772880285.3749583}
+{"action": "search", "metadata": {"query": "financial personnel services cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.015470504760742188, "timestamp": 1772880288.9147632}
+{"action": "search", "metadata": {"query": "personnel services budget cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.014648675918579102, "timestamp": 1772880292.648876}
+{"action": "search", "metadata": {"query": "financial budget for employee services cost", "top_k": 5, "result_count": 5}, "duration": 0.014017581939697266, "timestamp": 1772880296.2633464}
+{"action": "search", "metadata": {"query": "staff budget allocation for employee services", "top_k": 5, "result_count": 5}, "duration": 0.011690616607666016, "timestamp": 1772880299.2762334}
+{"action": "search", "metadata": {"query": "financial personnel services cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.012253046035766602, "timestamp": 1772880304.2186098}
+{"action": "search", "metadata": {"query": "personnel services financial cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.017505645751953125, "timestamp": 1772880307.7796795}
+{"action": "search", "metadata": {"query": "financial budget for staff services cost", "top_k": 5, "result_count": 5}, "duration": 0.014126300811767578, "timestamp": 1772880310.8720925}
+{"action": "search", "metadata": {"query": "employee cost allocation for personnel services", "top_k": 5, "result_count": 5}, "duration": 0.017339468002319336, "timestamp": 1772880317.4847405}
+{"action": "search", "metadata": {"query": "financial personnel services cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.018601179122924805, "timestamp": 1772880321.7753165}
+{"action": "search", "metadata": {"query": "personnel services budget cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.017914772033691406, "timestamp": 1772880326.2377377}
+{"action": "search", "metadata": {"query": "financial budget for employee services cost", "top_k": 5, "result_count": 5}, "duration": 0.016455411911010742, "timestamp": 1772880336.0627613}
+{"action": "search", "metadata": {"query": "staff budget allocation for employee services", "top_k": 5, "result_count": 5}, "duration": 0.03549647331237793, "timestamp": 1772880341.0888064}
+{"action": "search", "metadata": {"query": "financial personnel services cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.023190021514892578, "timestamp": 1772880348.5284297}
+{"action": "search", "metadata": {"query": "personnel services financial cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.022135019302368164, "timestamp": 1772880356.797095}
+{"action": "search", "metadata": {"query": "financial budget for staff services cost", "top_k": 5, "result_count": 5}, "duration": 0.02155780792236328, "timestamp": 1772880360.7963762}
+{"action": "search", "metadata": {"query": "employee cost allocation for personnel services", "top_k": 5, "result_count": 5}, "duration": 0.021641254425048828, "timestamp": 1772880365.0957835}
+{"action": "search", "metadata": {"query": "financial personnel services cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.033184051513671875, "timestamp": 1772880368.5425715}
+{"action": "search", "metadata": {"query": "personnel services budget cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.038445234298706055, "timestamp": 1772880375.7207441}
+{"action": "search", "metadata": {"query": "financial budget for employee services cost", "top_k": 5, "result_count": 5}, "duration": 0.03416180610656738, "timestamp": 1772880379.3283088}
+{"action": "search", "metadata": {"query": "staff budget allocation for employee services", "top_k": 5, "result_count": 5}, "duration": 0.023937702178955078, "timestamp": 1772880385.1956053}
+{"action": "search", "metadata": {"query": "financial personnel services cost allocation", "top_k": 5, "result_count": 5}, "duration": 0.017991304397583008, "timestamp": 1772880392.9901712}
+{"action": "ingestion", "metadata": {"ldu_count": 6}, "duration": 4.021509885787964, "timestamp": 1772880946.9779658}
+{"action": "search", "metadata": {"query": "Cash and cash equivalents as at 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.6071360111236572, "timestamp": 1772880989.6717796}
+{"action": "search", "metadata": {"query": "balance sheet cash and cash equivalents 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.03162550926208496, "timestamp": 1772880997.7542148}
+{"action": "search", "metadata": {"query": "cash and cash equivalents 30 June 2021", "top_k": 5, "result_count": 0}, "duration": 0.0467531681060791, "timestamp": 1772881002.5203269}
+{"action": "search", "metadata": {"query": "statement of financial position cash and cash equivalents 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.0337681770324707, "timestamp": 1772881007.40097}
+{"action": "search", "metadata": {"query": "Commercial Bank of Ethiopia cash and cash equivalents 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.03095269203186035, "timestamp": 1772881011.2183354}
+{"action": "search", "metadata": {"query": "financial position cash and cash equivalents 30 June 2021", "top_k": 5, "result_count": 0}, "duration": 0.02054619789123535, "timestamp": 1772881020.0609508}
+{"action": "search", "metadata": {"query": "Cash and cash equivalents amount", "top_k": 5, "result_count": 5}, "duration": 0.022260427474975586, "timestamp": 1772881038.893552}
+{"action": "ingestion", "metadata": {"ldu_count": 6}, "duration": 4.382479190826416, "timestamp": 1772882104.7794003}
+{"action": "search", "metadata": {"query": "cash and cash equivalents as of 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.47389864921569824, "timestamp": 1772882157.3705}
+{"action": "ingestion", "metadata": {"ldu_count": 10}, "duration": 0.8983445167541504, "timestamp": 1772883237.2259617}
+{"action": "search", "metadata": {"query": "Cash and cash equivalents as at 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.18643426895141602, "timestamp": 1772883579.7439246}
+{"action": "ingestion", "metadata": {"ldu_count": 10}, "duration": 23.602460384368896, "timestamp": 1772905333.7817817}
+{"action": "search", "metadata": {"query": "Cash and cash equivalents as at 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.5407295227050781, "timestamp": 1772905733.8506622}
+{"action": "ingestion", "metadata": {"ldu_count": 6}, "duration": 0.42287778854370117, "timestamp": 1772909110.4616368}
+{"action": "search", "metadata": {"query": "cash and cash equivalents 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.09302234649658203, "timestamp": 1772909147.2200227}
+{"action": "ingestion", "metadata": {"ldu_count": 6}, "duration": 0.48277759552001953, "timestamp": 1772910121.7994182}
+{"action": "search", "metadata": {"query": "cash and cash equivalents as of 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.14554595947265625, "timestamp": 1772910154.866573}
+{"action": "ingestion", "metadata": {"ldu_count": 10}, "duration": 1.5138108730316162, "timestamp": 1772911233.3962307}
+{"action": "search", "metadata": {"query": "cash and cash equivalents as of 30 June 2021", "top_k": 5, "result_count": 5}, "duration": 0.10861659049987793, "timestamp": 1772911536.9963863}
+{"action": "ingestion", "metadata": {"ldu_count": 10}, "duration": 0.6928210258483887, "timestamp": 1772911883.5133348}
+{"action": "ingestion", "metadata": {"ldu_count": 10}, "duration": 0.7489440441131592, "timestamp": 1772912899.8023}
