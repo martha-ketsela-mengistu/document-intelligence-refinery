@@ -73,8 +73,11 @@ def query_facts(sql: str, params: tuple = ()) -> List[Dict[str, Any]]:
     cursor = conn.cursor()
     
     try:
-        logger.info(f"Executing SQL query: {sql} with params {params}")
-        cursor.execute(sql, params)
+        # LLMs often escape single quotes with backslashes (e.g. Birr\'000), 
+        # but SQLite expects single quotes to be escaped by another single quote ('').
+        sanitized_sql = sql.replace("\\'", "''")
+        logger.info(f"Executing SQL query: {sanitized_sql} with params {params}")
+        cursor.execute(sanitized_sql, params)
         rows = cursor.fetchall()
         return [dict(row) for row in rows]
     except Exception as e:

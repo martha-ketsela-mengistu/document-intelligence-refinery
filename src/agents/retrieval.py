@@ -10,7 +10,7 @@ from ..utils.logging_utils import get_logger
 logger = get_logger(__name__)
 
 class RetrievalAgent:
-    def __init__(self, collection_name: str = "document_chunks", persist_directory: str = ".refinery/vector_store"):
+    def __init__(self, collection_name: str = "refinery_ldus", persist_directory: str = ".refinery/vector_store"):
         self.client = chromadb.PersistentClient(path=persist_directory)
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
         self.collection = self.client.get_or_create_collection(

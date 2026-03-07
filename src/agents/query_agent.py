@@ -6,7 +6,7 @@ from langchain_core.messages import BaseMessage, HumanMessage, ToolMessage
 from langchain_core.tools import tool
 from langgraph.graph import StateGraph, END
 from langgraph.prebuilt import ToolNode
-from ..agents.navigation import NavigationAgent
+from ..agents.indexer import NavigationAgent
 from ..agents.retrieval import RetrievalAgent
 from ..utils.db_utils import query_facts
 from ..utils.logging_utils import get_logger
@@ -62,6 +62,18 @@ def semantic_search(query: str, sections: Optional[List[str]] = None):
     return json.dumps(formatted, indent=2)
 
 @tool
+def fact_verification(entity_keyword: str, attribute_keyword: str):
+    """
+    Search for structured facts using keywords for entity and attribute.
+    Useful for verification when you know the keywords but are unsure of the exact spelling, case, or unit format in the database.
+    Example: fact_verification("Cash", "2021")
+    """
+    sql = "SELECT entity, attribute, value, unit, page_number, doc_id FROM fact_entries WHERE entity LIKE ? AND attribute LIKE ?"
+    params = (f"%{entity_keyword}%", f"%{attribute_keyword}%")
+    results = query_facts(sql, params)
+    return json.dumps(results, indent=2)
+
+@tool
 def structured_query(sql: str):
     """
     Execute a SQLite query against the 'fact_entries' table.
@@ -92,7 +104,8 @@ class RefineryAssistant:
         ).bind_tools([
             pageindex_navigate, 
             semantic_search, 
-            structured_query
+            structured_query,
+            fact_verification
         ])
         
         # Define the graph
@@ -102,7 +115,8 @@ class RefineryAssistant:
         workflow.add_node("tools", ToolNode([
             pageindex_navigate, 
             semantic_search, 
-            structured_query
+            structured_query,
+            fact_verification
         ]))
         
         workflow.set_entry_point("agent")
@@ -129,12 +143,21 @@ class RefineryAssistant:
         # System message to enforce provenance and tool usage
         system_msg = SystemMessage(content="""
 You are the Document Intelligence Refinery Assistant. You help users query complex documents.
-CRITICAL INSTRUCTION: You MUST ALWAYS include source citations (doc_id, page_number, bounding box) in your final answer for EVERY fact or claim you state.
-Format your citations strictly as: [Doc: <doc_id>, Page: <page_number>, BBox: <bbox>]
-Use 'pageindex_navigate' first to understand the document structure.
-Use 'structured_query' for numerical or financial facts.
-Use 'semantic_search' for textual details.
-Without citations, your answer is invalid. Be precise and cite your sources exactly using the metadata returned by the tools.
+CRITICAL INSTRUCTION: You MUST ALWAYS include source citations (doc_id, page_number) in your final answer for EVERY fact or claim you state.
+Format your citations strictly as: [Doc: <doc_id>, Page: <page_number>]
+
+TOOL USAGE GUIDELINES:
+1. Use 'pageindex_navigate' first to understand the document structure and identify relevant section titles.
+2. Use 'fact_verification' for claim auditing and finding structured facts when you are unsure of the exact format.
+   - It performs fuzzy matching on entity and attribute.
+   - Example: If verifying cash in 2021, use fact_verification(entity_keyword="Cash", attribute_keyword="2021").
+3. Use 'structured_query' for precise SQL when you are confident in the schema and values.
+4. Use 'semantic_search' for textual details or when structured tools fail.
+
+CRITICAL Provenance Rules:
+- You MUST use the EXACT 'doc_id' string returned by the tools.
+- VALUE NORMALIZATION: If a tool returns a value like 15194080 with unit "Birr'000", recognize that it actually means 15,194,080,000 Birr. Explain this calculation in your answer.
+- Without citations, your answer is invalid. Be precise and cite your sources exactly using the metadata returned by the tools.
 """)
         # Prepend system message
         messages = [system_msg] + state["messages"]
@@ -145,3 +168,11 @@ Without citations, your answer is invalid. Be precise and cite your sources exac
         inputs = {"messages": [HumanMessage(content=query)]}
         final_state = self.app.invoke(inputs, config={"recursion_limit": 10})
         return final_state["messages"][-1].content
+
+    def audit_claim(self, claim: str) -> str:
+        """
+        Audit Mode: Verify a claim against the document.
+        Returns the verification with source citation or 'unverifiable'.
+        """
+        prompt = f"Verify the following claim against the document data. If verified, provide the Doc ID and Page Number. If it cannot be verified, state 'unverifiable'.\n\nClaim: {claim}"
+        return self.run(prompt)
