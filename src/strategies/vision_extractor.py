@@ -39,7 +39,7 @@ class VisionExtractor(BaseExtractor):
                 document_id=doc_id,
                 page_number=page_number,
                 strategy_used="vision_augmented",
-                content=ExtractedDocument(document_id=doc_id),
+                content=ExtractedDocument(document_id=doc_id, page_number=page_number),
                 confidence_score=0.0,
                 processing_time=0.0,
                 error="Budget guard: page limit exceeded"
@@ -124,6 +124,7 @@ class VisionExtractor(BaseExtractor):
 
             content = ExtractedDocument(
                 document_id=doc_id,
+                page_number=page_number,
                 text_blocks=text_blocks,
                 tables=tables,
                 figures=figures,
@@ -152,7 +153,7 @@ class VisionExtractor(BaseExtractor):
                 document_id=doc_id,
                 page_number=page_number,
                 strategy_used="vision_augmented",
-                content=ExtractedDocument(document_id=doc_id),
+                content=ExtractedDocument(document_id=doc_id, page_number=page_number),
                 confidence_score=0.0,
                 processing_time=time.time() - start_time,
                 error=f"Vision strategy failed: {str(e)}"
