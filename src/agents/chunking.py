@@ -1,9 +1,15 @@
 import hashlib
 import re
+import json
+import os
 from typing import List, Optional, Dict, Any
+import time
 from ..models.extraction import ExtractedDocument, TextBlock, Table, Figure
 from ..models.chunking import LDU, ChunkType
 from ..models.base import BoundingBox
+from ..utils.logging_utils import get_logger
+
+logger = get_logger(__name__)
 
 class ChunkingEngine:
     def __init__(self, rules: Optional[dict] = None):
@@ -13,23 +19,43 @@ class ChunkingEngine:
             "caption_attached_to_figure": True,
             "numbered_list_as_single_ldu": True,
             "section_headers_as_parent_metadata": True,
-            "resolve_cross_references": True
+            "resolve_cross_references": True,
+            "ledger_path": ".refinery/chunking_ledger.jsonl"
         }
         self.current_section = None
         self.token_ratio = 0.75 # Estimated words per token
+        os.makedirs(os.path.dirname(self.rules["ledger_path"]), exist_ok=True)
 
     def chunk_document(self, document_id: str, pages: List[ExtractedDocument]) -> List[LDU]:
-        chunks = []
+        logger.info(f"Chunking document {document_id} ({len(pages)} pages)...")
+        start_time = time.time()
+        
+        all_chunks = []
         for page in pages:
-            chunks.extend(self.process_page(page))
+            all_chunks.extend(self.process_page(page))
         
         # Rule 5: Cross-reference resolution (second pass)
         if self.rules["resolve_cross_references"]:
-            chunks = self._resolve_cross_references(chunks)
+            all_chunks = self._resolve_cross_references(all_chunks)
             
-        return chunks
+        duration = time.time() - start_time
+        logger.info(f"Chunking finished for {document_id}. Generated {len(all_chunks)} LDUs in {duration:.2f}s.")
+        self._log_to_ledger(document_id, len(pages), len(all_chunks), duration)
+        return all_chunks
+
+    def _log_to_ledger(self, doc_id: str, page_count: int, ldu_count: int, duration: float):
+        entry = {
+            "doc_id": doc_id,
+            "page_count": page_count,
+            "ldu_count": ldu_count,
+            "processing_time": duration,
+            "timestamp": time.time()
+        }
+        with open(self.rules["ledger_path"], "a") as f:
+            f.write(json.dumps(entry) + "\n")
 
     def process_page(self, page: ExtractedDocument) -> List[LDU]:
+        logger.info(f"Processing page {page.page_number} of document {page.document_id}...")
         page_chunks = []
         
         # Sort items by vertical position for reading order if not provided
