@@ -18,6 +18,7 @@ class Figure(ProvenanceBase):
 class ExtractedDocument(BaseModel):
     """Normalized extraction output from various strategies."""
     document_id: str
+    page_number: int = Field(ge=1)
     text_blocks: List[TextBlock] = Field(default_factory=list)
     tables: List[Table] = Field(default_factory=list)
     figures: List[Figure] = Field(default_factory=list)

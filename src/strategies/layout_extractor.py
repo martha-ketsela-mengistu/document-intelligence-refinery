@@ -66,6 +66,7 @@ class LayoutExtractor(BaseExtractor):
             
             content = ExtractedDocument(
                 document_id=doc_id,
+                page_number=page_number,
                 text_blocks=text_blocks,
                 tables=tables,
                 figures=figures,
@@ -92,7 +93,7 @@ class LayoutExtractor(BaseExtractor):
                 document_id=doc_id,
                 page_number=page_number,
                 strategy_used="layout_aware",
-                content=ExtractedDocument(document_id=doc_id),
+                content=ExtractedDocument(document_id=doc_id, page_number=page_number),
                 confidence_score=0.0,
                 processing_time=time.time() - start_time,
                 error=str(e)

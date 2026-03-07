@@ -1,0 +1,6 @@
+{"action": "ingestion", "metadata": {"ldu_count": 118}, "duration": 5.6415886878967285, "timestamp": 1772872137.0814629}
+{"action": "search", "metadata": {"query": "What are the allowed types of security research under this procedure?", "top_k": 3, "result_count": 3}, "duration": 0.1372373104095459, "timestamp": 1772872137.2223704}
+{"action": "ingestion", "metadata": {"ldu_count": 118}, "duration": 4.702973365783691, "timestamp": 1772872522.6229022}
+{"action": "search", "metadata": {"query": "What are the allowed types of security research under this procedure?", "top_k": 3, "result_count": 3}, "duration": 0.24665522575378418, "timestamp": 1772872522.8725672}
+{"action": "ingestion", "metadata": {"ldu_count": 118}, "duration": 6.1648499965667725, "timestamp": 1772873957.9790206}
+{"action": "search", "metadata": {"query": "What are the allowed types of security research under this procedure?", "top_k": 3, "result_count": 3}, "duration": 0.2166891098022461, "timestamp": 1772873958.2107303}

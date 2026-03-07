@@ -95,6 +95,7 @@ class FastTextExtractor(BaseExtractor):
                 # Build ExtractedDocument
                 content = ExtractedDocument(
                     document_id=doc_id,
+                    page_number=page_number,
                     text_blocks=text_blocks,
                     tables=tables,
                     figures=figures,
@@ -124,7 +125,7 @@ class FastTextExtractor(BaseExtractor):
                 document_id=doc_id,
                 page_number=page_number,
                 strategy_used="fast_text",
-                content=ExtractedDocument(document_id=doc_id),
+                content=ExtractedDocument(document_id=doc_id, page_number=page_number),
                 confidence_score=0.0,
                 processing_time=time.time() - start_time,
                 error=str(e)

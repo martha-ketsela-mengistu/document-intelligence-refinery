@@ -9,3 +9,4 @@ docs/
 data/
 __pycache__/
 .refinery/logs/
+.refinery/vector_store/
