@@ -1,0 +1,4 @@
+{"doc_id": "Security_PD_2", "sections": 21, "total_time": 8.320577383041382, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772871070.1293309}
+{"doc_id": "Security_PD_1", "sections": 21, "total_time": 8.139457702636719, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772872124.7771957}
+{"doc_id": "Security_PD_1", "sections": 21, "total_time": 13.212492227554321, "llm_stats": {"summary_calls": 20, "ner_calls": 20, "llm_duration": 0.0}, "timestamp": 1772872511.1395268}
+{"doc_id": "Security_PD_1", "sections": 21, "total_time": 20.132893323898315, "llm_stats": {"summary_calls": 20, "ner_calls": 20, "llm_duration": 0.0}, "timestamp": 1772873933.2778437}
