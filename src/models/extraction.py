@@ -23,3 +23,14 @@ class ExtractedDocument(BaseModel):
     tables: List[Table] = Field(default_factory=list)
     figures: List[Figure] = Field(default_factory=list)
     reading_order: List[str] = Field(default_factory=list, description="Ordered list of item IDs or content hashes")
+
+class FactEntry(BaseModel):
+    """A structured fact extracted from the document."""
+    doc_id: str
+    entity: str
+    attribute: str
+    value: str
+    unit: Optional[str] = None
+    page_number: int
+    bbox: BoundingBox
+    content_hash: str
