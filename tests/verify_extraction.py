@@ -19,7 +19,8 @@ def verify_extraction_pipeline():
     
     # Sample PDF (from data folder as per previous step)
     # pdf_path = "data/Security_Vulnerability_Disclosure_Standard_Procedure_1.pdf"
-    pdf_path = "data/2013-E.C-Assigned-regular-budget-and-expense.pdf"
+    # pdf_path = "data/2013-E.C-Assigned-regular-budget-and-expense.pdf"
+    pdf_path = "data/2021_Audited_Financial_Statement_Report.pdf"
     if not os.path.exists(pdf_path):
         logger.error(f"Error: {pdf_path} not found.")
         return
