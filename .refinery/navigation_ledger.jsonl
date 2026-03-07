@@ -21,3 +21,16 @@
 {"doc_id": "2021_Audited_Financial_Statement_Report", "sections": 1, "total_time": 0.0, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772911224.2678225}
 {"doc_id": "2021_Audited_Financial_Statement_Report", "sections": 1, "total_time": 0.0, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772911873.1281464}
 {"doc_id": "2021_Audited_Financial_Statement_Report", "sections": 1, "total_time": 0.0, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772912893.129376}
+{"doc_id": "ETHIO_RE_AT_A_GLANCE_2023_24.pdf", "sections": 1, "total_time": 0.0, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772915982.984196}
+{"doc_id": "Annual_Report_JUNE-2018.pdf", "sections": 21, "total_time": 17.35964798927307, "llm_stats": {"summary_calls": 26, "ner_calls": 26, "llm_duration": 0.0}, "timestamp": 1772916130.5301971}
+{"doc_id": "Annual_Report_JUNE-2018.pdf", "sections": 21, "total_time": 10.975235223770142, "llm_stats": {"summary_calls": 26, "ner_calls": 26, "llm_duration": 0.0}, "timestamp": 1772916258.0801368}
+{"doc_id": "Annual_Report_JUNE-2018.pdf", "sections": 21, "total_time": 18.008738040924072, "llm_stats": {"summary_calls": 26, "ner_calls": 26, "llm_duration": 0.0}, "timestamp": 1772916375.5647209}
+{"doc_id": "Security_PD_1", "sections": 1, "total_time": 0.02281498908996582, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772916900.9825757}
+{"doc_id": "Security_PD_1", "sections": 1, "total_time": 0.0005667209625244141, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772916955.588865}
+{"doc_id": "Annual_Report_2018", "sections": 4, "total_time": 2.609231472015381, "llm_stats": {"summary_calls": 3, "ner_calls": 3, "llm_duration": 0.0}, "timestamp": 1772917089.9318314}
+{"doc_id": "Annual_Report_JUNE-2018.pdf", "sections": 21, "total_time": 10.18796968460083, "llm_stats": {"summary_calls": 26, "ner_calls": 26, "llm_duration": 0.0}, "timestamp": 1772917241.450963}
+{"doc_id": "Consumer Price Index March 2025.pdf", "sections": 5, "total_time": 5.5022454261779785, "llm_stats": {"summary_calls": 8, "ner_calls": 8, "llm_duration": 0.0}, "timestamp": 1772918318.9223263}
+{"doc_id": "2021_Audited_Financial_Statement_Report.pdf", "sections": 1, "total_time": 0.0, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772918491.7095656}
+{"doc_id": "2021_Audited_Financial_Statement_Report.pdf", "sections": 1, "total_time": 0.0, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772918724.0180073}
+{"doc_id": "2021_Audited_Financial_Statement_Report", "sections": 1, "total_time": 0.0, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772919085.0650258}
+{"doc_id": "2021_Audited_Financial_Statement_Report.pdf", "sections": 1, "total_time": 0.0009818077087402344, "llm_stats": {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}, "timestamp": 1772920556.9717824}

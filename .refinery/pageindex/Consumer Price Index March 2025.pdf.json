@@ -1,0 +1,112 @@
+{
+  "document_id": "Consumer Price Index March 2025.pdf",
+  "root": {
+    "title": "Document Root",
+    "page_start": 1,
+    "page_end": 5,
+    "summary": "Full document overview",
+    "data_types_present": [
+      "text",
+      "heading"
+    ],
+    "key_entities": [],
+    "child_sections": [
+      {
+        "title": "ETHIOPIAN STATISTICAL SERVICE",
+        "page_start": 1,
+        "page_end": 5,
+        "summary": "Overview of ETHIOPIAN STATISTICAL SERVICE",
+        "data_types_present": [
+          "text",
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "MONTHLY NEWS RELEASE INFLATION REPORT ON MARCH, EFY 2017",
+        "page_start": 1,
+        "page_end": 1,
+        "summary": "Overview of MONTHLY NEWS RELEASE INFLATION REPORT ON MARCH, EFY 2017",
+        "data_types_present": [
+          "text",
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "1. Summary",
+        "page_start": 1,
+        "page_end": 1,
+        "summary": "Overview of 1. Summary",
+        "data_types_present": [
+          "text",
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "2. Food & Non -alcoholic Beverages and Non -Food Inflation (Year -on -Year)",
+        "page_start": 1,
+        "page_end": 2,
+        "summary": "Overview of 2. Food & Non -alcoholic Beverages and Non -Food Inflation (Year -on -Year)",
+        "data_types_present": [
+          "text",
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "ETHIOPIAN STATISTICAL SERVICE",
+        "page_start": 2,
+        "page_end": 5,
+        "summary": "Overview of ETHIOPIAN STATISTICAL SERVICE",
+        "data_types_present": [
+          "text",
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "ETHIOPIAN STATISTICAL SERVICE",
+        "page_start": 3,
+        "page_end": 5,
+        "summary": "Overview of ETHIOPIAN STATISTICAL SERVICE",
+        "data_types_present": [
+          "text",
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "ETHIOPIAN STATISTICAL SERVICE",
+        "page_start": 4,
+        "page_end": 5,
+        "summary": "Overview of ETHIOPIAN STATISTICAL SERVICE",
+        "data_types_present": [
+          "text",
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "ETHIOPIAN STATISTICAL SERVICE",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of ETHIOPIAN STATISTICAL SERVICE",
+        "data_types_present": [
+          "text",
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      }
+    ]
+  }
+}
