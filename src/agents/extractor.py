@@ -36,10 +36,15 @@ class ExtractionRouter:
 
         os.makedirs(os.path.dirname(self.rules["ledger_path"]), exist_ok=True)
 
-    def extract_document(self, file_path: str, profile: DocumentProfile) -> List[ExtractionResult]:
-        logger.info(f"Extracting document {profile.document_id} with {len(profile.pages)} pages...")
+    def extract_document(self, file_path: str, profile: DocumentProfile, page_range: Optional[tuple] = None) -> List[ExtractionResult]:
+        pages_to_extract = profile.pages
+        if page_range:
+            start, end = page_range
+            pages_to_extract = [p for p in profile.pages if start <= p.page_number <= end]
+            
+        logger.info(f"Extracting document {profile.document_id} ({len(pages_to_extract)} pages requested)...")
         results = []
-        for page_prof in profile.pages:
+        for page_prof in pages_to_extract:
             result = self.extract_page_with_escalation(file_path, page_prof.page_number, profile.document_id, page_prof.estimated_extraction_cost)
             results.append(result)
         logger.info(f"Document extraction finished for {profile.document_id}.")

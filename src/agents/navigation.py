@@ -11,7 +11,7 @@ from ..utils.logging_utils import get_logger
 logger = get_logger(__name__)
 
 class NavigationAgent:
-    def __init__(self, ollama_host: Optional[str] = None, model: str = "llama3.2"):
+    def __init__(self, ollama_host: Optional[str] = None, model: str = "qwen3-vl:235b-instruct"):
         self.client = Client(host=ollama_host or os.getenv("OLLAMA_HOST", "https://ollama.com"))
         self.model = model
         self.ledger_path = ".refinery/navigation_ledger.jsonl"

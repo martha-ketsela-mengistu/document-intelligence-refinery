@@ -42,14 +42,16 @@ class RetrievalAgent:
                 "type": ldu.chunk_type.value,
                 "section": ldu.parent_section or "N/A",
                 "pages": ",".join(map(str, ldu.page_refs)),
-                "hash": ldu.content_hash
+                "hash": ldu.content_hash,
+                "bbox": json.dumps(ldu.bbox.to_tuple()) if hasattr(ldu, 'bbox') and ldu.bbox else "N/A",
+                "doc_id": ldu.metadata.get("doc_id", "Unknown") if isinstance(ldu.metadata, dict) else "Unknown"
             } for ldu in unique_ldus
         ]
         
         # Generate embeddings
         embeddings = self.model.encode(documents).tolist()
         
-        self.collection.add(
+        self.collection.upsert(
             ids=ids,
             documents=documents,
             metadatas=metadatas,
