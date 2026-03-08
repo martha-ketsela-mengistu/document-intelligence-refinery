@@ -9,19 +9,26 @@ sys.path.append(os.getcwd())
 
 from src.agents.triage import TriageAgent
 from src.agents.extractor import ExtractionRouter
-from src.agents.chunking import ChunkingEngine
-from src.agents.navigation import NavigationAgent
+from src.agents.chunker import ChunkingEngine
+from src.agents.indexer import NavigationAgent
 from src.agents.retrieval import RetrievalAgent
 from src.models.extraction import ExtractedDocument
 
 def verify_full_pipeline():
     # Configuration
-    rules_path = "g:/projects/document-intelligence-refinery/rubric/extraction_rules.yaml"
+    rules_path = "rubric/extraction_rules.yaml"
+    if not os.path.exists(rules_path):
+        # Try parent dir if running from tests/
+        rules_path = os.path.join("..", rules_path)
+        
     with open(rules_path, "r") as f:
         rules = yaml.safe_load(f)
 
-    file_path = "g:/projects/document-intelligence-refinery/data/Security_Vulnerability_Disclosure_Standard_Procedure_1.pdf"
-    document_id = "Security_PD_1"
+    file_path = "data/2021_Audited_Financial_Statement_Report.pdf"
+    document_id = "2021_Audited_Financial_Statement_Report"
+    
+    if not os.path.exists(file_path):
+        file_path = os.path.join("..", file_path)
 
     if not os.path.exists(file_path):
         print(f"File not found: {file_path}")
@@ -41,8 +48,8 @@ def verify_full_pipeline():
     print("\n--- Stage 2: Extraction ---")
     # Note: ExtractionRouter expects 'escalation' rules which contain strategy-specific overrides
     extractor_router = ExtractionRouter(rules=rules.get("escalation", {}))
-    # extract_document handles the page loop and escalation logic
-    extraction_results = extractor_router.extract_document(file_path, doc_profile)
+    # extract_document handles the page loop and escalation logic, limiting to 3 pages for speed
+    extraction_results = extractor_router.extract_document(file_path, doc_profile, page_range=(1, 3))
     
     successful_docs = []
     for res in extraction_results:
@@ -62,7 +69,8 @@ def verify_full_pipeline():
     # --- Stage 4: Page Index & NER ---
     print("\n--- Stage 4: Page Index & NER ---")
     # NavigationAgent uses Ollama for summaries and NER
-    nav_agent = NavigationAgent(model="llama3.2")
+    ollama_host = os.getenv("OLLAMA_HOST", "http://ollama.com")
+    nav_agent = NavigationAgent(ollama_host=ollama_host, model="qwen3-vl:235b-instruct")
     page_index = nav_agent.build_tree(document_id, chunks)
     
     # Print tree structure
@@ -90,7 +98,7 @@ def verify_full_pipeline():
     print(f"Ingested {len(chunks)} unique LDUs into ChromaDB.")
 
     # Test Hybrid Query
-    query = "What are the allowed types of security research under this procedure?"
+    query = "What is the net profit for the year 2021?"
     print(f"\nSearching for: \"{query}\"")
     
     # Step A: Page Index Query (Narrow down sections)

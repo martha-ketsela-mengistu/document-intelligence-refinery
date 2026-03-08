@@ -1,0 +1,325 @@
+{
+  "document_id": "Annual_Report_JUNE-2018.pdf",
+  "root": {
+    "title": "Document Root",
+    "page_start": 2,
+    "page_end": 5,
+    "summary": "Full document overview",
+    "data_types_present": [
+      "heading",
+      "text"
+    ],
+    "key_entities": [],
+    "child_sections": [
+      {
+        "title": "ETHIOPIAN REINSURANCE",
+        "page_start": 2,
+        "page_end": 5,
+        "summary": "Overview of ETHIOPIAN REINSURANCE",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "ANNUAL REPORT",
+        "page_start": 2,
+        "page_end": 5,
+        "summary": "Overview of ANNUAL REPORT",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "B",
+        "page_start": 2,
+        "page_end": 2,
+        "summary": "Overview of B",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "C ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "page_start": 3,
+        "page_end": 4,
+        "summary": "Overview of C ETHIOPIAN REINSURANCE ANNUAL REPORT",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "120.1",
+        "page_start": 4,
+        "page_end": 4,
+        "summary": "Overview of 120.1",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "11.3",
+        "page_start": 4,
+        "page_end": 5,
+        "summary": "Overview of 11.3",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": [
+          {
+            "title": "11.3",
+            "page_start": 5,
+            "page_end": 5,
+            "summary": "Overview of 11.3",
+            "data_types_present": [
+              "heading",
+              "text"
+            ],
+            "key_entities": [],
+            "child_sections": []
+          }
+        ]
+      },
+      {
+        "title": "661.4",
+        "page_start": 4,
+        "page_end": 4,
+        "summary": "Overview of 661.4",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": [
+          {
+            "title": "66.90",
+            "page_start": 5,
+            "page_end": 5,
+            "summary": "Overview of 66.90",
+            "data_types_present": [
+              "heading",
+              "text"
+            ],
+            "key_entities": [],
+            "child_sections": []
+          }
+        ]
+      },
+      {
+        "title": "553.2",
+        "page_start": 4,
+        "page_end": 4,
+        "summary": "Overview of 553.2",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "334.8",
+        "page_start": 4,
+        "page_end": 5,
+        "summary": "Overview of 334.8",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": [
+          {
+            "title": "3.99",
+            "page_start": 5,
+            "page_end": 5,
+            "summary": "Overview of 3.99",
+            "data_types_present": [
+              "heading",
+              "text"
+            ],
+            "key_entities": [],
+            "child_sections": []
+          }
+        ]
+      },
+      {
+        "title": "NET CLAIMS RATIO",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of NET CLAIMS RATIO",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "60.53",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of 60.53",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "NET COMMISSION RATIO",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of NET COMMISSION RATIO",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "OPERATING AND OTHER EXPENSES RATIO",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of OPERATING AND OTHER EXPENSES RATIO",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "COMBINED RATIO",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of COMBINED RATIO",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "97.87",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of 97.87",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "78.6",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of 78.6",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": [
+          {
+            "title": "78.6",
+            "page_start": 5,
+            "page_end": 5,
+            "summary": "Overview of 78.6",
+            "data_types_present": [
+              "heading",
+              "text"
+            ],
+            "key_entities": [],
+            "child_sections": []
+          }
+        ]
+      },
+      {
+        "title": "34.2",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of 34.2",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "ETHIOPIAN REINSURANCE",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of ETHIOPIAN REINSURANCE",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "ANNUAL REPORT",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of ANNUAL REPORT",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "NET COMMISSION RATIO",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of NET COMMISSION RATIO",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "OPERATING AND OTHER EXPENSES RATIO 2017 2018",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of OPERATING AND OTHER EXPENSES RATIO 2017 2018",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "COMBINED RATIO",
+        "page_start": 5,
+        "page_end": 5,
+        "summary": "Overview of COMBINED RATIO",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      }
+    ]
+  }
+}

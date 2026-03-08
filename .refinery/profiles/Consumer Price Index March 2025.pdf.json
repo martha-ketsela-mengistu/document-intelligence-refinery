@@ -1,0 +1,182 @@
+{
+  "document_id": "Consumer Price Index March 2025.pdf",
+  "overall_origin_type": "native_digital",
+  "overall_layout_complexity": "table_heavy",
+  "overall_estimated_cost": "needs_layout_model",
+  "domain_hint": "financial",
+  "language": {
+    "code": "en",
+    "confidence": 0.9
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004961791113751898,
+      "image_area_ratio": 0.03409828988413547,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2405,
+        "image_count": 1,
+        "rect_count": 9
+      }
+    },
+    {
+      "page_number": 2,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0021972172707466825,
+      "image_area_ratio": 0.03409828988413547,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1065,
+        "image_count": 1,
+        "rect_count": 140
+      }
+    },
+    {
+      "page_number": 3,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0019496434937611407,
+      "image_area_ratio": 0.30574478362051893,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 945,
+        "image_count": 2,
+        "rect_count": 7
+      }
+    },
+    {
+      "page_number": 4,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004012758301973988,
+      "image_area_ratio": 0.03409828988413547,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1945,
+        "image_count": 1,
+        "rect_count": 39
+      }
+    },
+    {
+      "page_number": 5,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0023251303888558793,
+      "image_area_ratio": 0.03409828988413547,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1127,
+        "image_count": 1,
+        "rect_count": 42
+      }
+    },
+    {
+      "page_number": 6,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0016711229946524064,
+      "image_area_ratio": 0.3345184919043375,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 810,
+        "image_count": 2,
+        "rect_count": 5
+      }
+    },
+    {
+      "page_number": 7,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002040420545322506,
+      "image_area_ratio": 0.03409828988413547,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 989,
+        "image_count": 1,
+        "rect_count": 107
+      }
+    },
+    {
+      "page_number": 8,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0018609295570079884,
+      "image_area_ratio": 0.03409828988413547,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 902,
+        "image_count": 1,
+        "rect_count": 101
+      }
+    },
+    {
+      "page_number": 9,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0017330164388987919,
+      "image_area_ratio": 0.323872547781739,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 840,
+        "image_count": 2,
+        "rect_count": 7
+      }
+    },
+    {
+      "page_number": 10,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.00090570740080544,
+      "image_area_ratio": 0.4091797697151251,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 439,
+        "image_count": 2,
+        "rect_count": 5
+      }
+    },
+    {
+      "page_number": 11,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0017330164388987919,
+      "image_area_ratio": 0.32583637663398685,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 840,
+        "image_count": 2,
+        "rect_count": 5
+      }
+    },
+    {
+      "page_number": 12,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0024943058031293326,
+      "image_area_ratio": 0.03409828988413547,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1209,
+        "image_count": 1,
+        "rect_count": 7
+      }
+    }
+  ],
+  "metadata": {}
+}

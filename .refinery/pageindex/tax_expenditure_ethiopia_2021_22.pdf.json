@@ -1,0 +1,135 @@
+{
+  "document_id": "tax_expenditure_ethiopia_2021_22.pdf",
+  "root": {
+    "title": "Document Root",
+    "page_start": 1,
+    "page_end": 10,
+    "summary": "Full document overview",
+    "data_types_present": [
+      "table",
+      "heading",
+      "text"
+    ],
+    "key_entities": [],
+    "child_sections": [
+      {
+        "title": "2.8% of GDP, between ETB 76.4 billion and ETB 78.3 billion (or 2.3% of GDP) in FY",
+        "page_start": 4,
+        "page_end": 6,
+        "summary": "In FY 2020/21, Ethiopia’s import tax expenditures totaled ETB 120.7 billion (2.8% of GDP), led by VAT and customs duties, with motor vehicles and animal/vegetable fats accounting for nearly 40% of expenditures due to high surtax rates and ad hoc exemptions, while capital goods and preferential rates contributed minimally.",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [
+          "FY 2020/21",
+          "FY 2018/19",
+          "FY 2019/20",
+          "Ethiopia",
+          "Ministry of Finance"
+        ],
+        "child_sections": []
+      },
+      {
+        "title": "1. Introduction",
+        "page_start": 6,
+        "page_end": 6,
+        "summary": "This report estimates federal import tax expenditures for Ethiopia’s fiscal years 2018/19–2020/21 using customs microdata, comparing actual collections to a benchmark system, and focuses solely on import taxes due to data availability, building on prior reports that found import tax expenditures reached 2.74% of GDP in FY 2018/19.",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [
+          "2020/21",
+          "2017/18",
+          "April 2020",
+          "Ethiopian Customs Commission",
+          "2018/19",
+          "2016/17",
+          "Ministry of Finance",
+          "2019/20"
+        ],
+        "child_sections": []
+      },
+      {
+        "title": "3.7%, our main estimate for FY 2018/19 tax expenditures is somewhat larger; however, it is",
+        "page_start": 6,
+        "page_end": 7,
+        "summary": "The main FY 2018/19 tax expenditure estimate of 3.7% is likely inflated by up to 1.1 percentage points due to double-counting from a customs IT system transition.",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [
+          "Ethiopia",
+          "FY 2018/19",
+          "Ministry of Finance"
+        ],
+        "child_sections": [
+          {
+            "title": "3.1 Defining the benchmark tax system",
+            "page_start": 9,
+            "page_end": 10,
+            "summary": "The benchmark tax system is defined as the standard tax rates in official proclamations and regulations—including preferential rates under trade agreements and diplomatic exemptions—against which deviations (like lower duties or exemptions) are measured as tax expenditures, with adjustments to avoid negative expenditures.",
+            "data_types_present": [
+              "heading",
+              "text"
+            ],
+            "key_entities": [
+              "International Monetary Fund",
+              "Vienna Conventions"
+            ],
+            "child_sections": []
+          }
+        ]
+      },
+      {
+        "title": "2. Policy rationale for and",
+        "page_start": 7,
+        "page_end": 9,
+        "summary": "Ethiopia uses targeted tax incentives and exemptions to boost manufacturing, attract investment, enhance export competitiveness, and promote equitable regional development, while also stabilizing prices of essential imports.",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [
+          "Proclamation No. 768/2012",
+          "Ethiopian Revenue and Customs Authority",
+          "Ethiopia",
+          "2017",
+          "Ministry of Finance",
+          "Council of Ministers Regulation No. 270/2012"
+        ],
+        "child_sections": []
+      },
+      {
+        "title": "3. Definitions and data",
+        "page_start": 9,
+        "page_end": 9,
+        "summary": "This section defines key terms and outlines the data sources and methodologies used in the document.",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [
+          "empty"
+        ],
+        "child_sections": []
+      },
+      {
+        "title": "4.5%, 9%, 18%, 27% and 31.5%.",
+        "page_start": 10,
+        "page_end": 10,
+        "summary": "The document section lists tax rates of 4.5%, 9%, 18%, 27%, and 31.5%, as published by Ethiopia’s Ministry of Finance.",
+        "data_types_present": [
+          "heading",
+          "text"
+        ],
+        "key_entities": [
+          "Ethiopia",
+          "Ministry of Finance"
+        ],
+        "child_sections": []
+      }
+    ]
+  }
+}

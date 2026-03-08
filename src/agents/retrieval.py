@@ -10,7 +10,7 @@ from ..utils.logging_utils import get_logger
 logger = get_logger(__name__)
 
 class RetrievalAgent:
-    def __init__(self, collection_name: str = "document_chunks", persist_directory: str = ".refinery/vector_store"):
+    def __init__(self, collection_name: str = "refinery_ldus", persist_directory: str = ".refinery/vector_store"):
         self.client = chromadb.PersistentClient(path=persist_directory)
         self.model = SentenceTransformer('all-MiniLM-L6-v2')
         self.collection = self.client.get_or_create_collection(
@@ -42,14 +42,16 @@ class RetrievalAgent:
                 "type": ldu.chunk_type.value,
                 "section": ldu.parent_section or "N/A",
                 "pages": ",".join(map(str, ldu.page_refs)),
-                "hash": ldu.content_hash
+                "hash": ldu.content_hash,
+                "bbox": json.dumps(ldu.bbox.to_tuple()) if hasattr(ldu, 'bbox') and ldu.bbox else "N/A",
+                "doc_id": ldu.metadata.get("doc_id", "Unknown") if isinstance(ldu.metadata, dict) else "Unknown"
             } for ldu in unique_ldus
         ]
         
         # Generate embeddings
         embeddings = self.model.encode(documents).tolist()
         
-        self.collection.add(
+        self.collection.upsert(
             ids=ids,
             documents=documents,
             metadatas=metadatas,

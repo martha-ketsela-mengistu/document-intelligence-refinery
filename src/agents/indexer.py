@@ -11,12 +11,14 @@ from ..utils.logging_utils import get_logger
 logger = get_logger(__name__)
 
 class NavigationAgent:
-    def __init__(self, ollama_host: Optional[str] = None, model: str = "llama3.2"):
+    def __init__(self, ollama_host: Optional[str] = None, model: str = "qwen3-vl:235b-instruct"):
         self.client = Client(host=ollama_host or os.getenv("OLLAMA_HOST", "https://ollama.com"))
         self.model = model
         self.ledger_path = ".refinery/navigation_ledger.jsonl"
+        self.output_dir = ".refinery/pageindex"
         self.stats = {"summary_calls": 0, "ner_calls": 0, "llm_duration": 0.0}
         os.makedirs(os.path.dirname(self.ledger_path), exist_ok=True)
+        os.makedirs(self.output_dir, exist_ok=True)
 
     def build_tree(self, document_id: str, chunks: List[LDU]) -> PageIndex:
         logger.info(f"Building PageIndex for {document_id} from {len(chunks)} chunks...")
@@ -76,7 +78,28 @@ class NavigationAgent:
         duration = time.time() - start_time
         logger.info(f"PageIndex built for {document_id} with {len(current_nodes)} sections in {duration:.2f}s.")
         self._log_to_ledger(document_id, len(current_nodes), duration)
-        return PageIndex(document_id=document_id, root=root_node)
+        
+        page_index = PageIndex(document_id=document_id, root=root_node)
+        self._save_index(page_index)
+        
+        return page_index
+
+    def _save_index(self, index: PageIndex):
+        output_path = os.path.join(self.output_dir, f"{index.document_id}.json")
+        with open(output_path, "w") as f:
+            f.write(index.model_dump_json(indent=2))
+        logger.info(f"PageIndex saved to {output_path}")
+
+    def load_tree(self, document_id: str) -> Optional[PageIndex]:
+        """Load a PageIndex from disk if it exists."""
+        input_path = os.path.join(self.output_dir, f"{document_id}.json")
+        if not os.path.exists(input_path):
+            logger.warning(f"PageIndex not found at {input_path}")
+            return None
+            
+        with open(input_path, "r") as f:
+            data = json.load(f)
+            return PageIndex.model_validate(data)
 
     def _log_to_ledger(self, doc_id: str, section_count: int, total_duration: float):
         entry = {

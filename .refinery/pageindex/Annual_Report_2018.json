@@ -1,0 +1,48 @@
+{
+  "document_id": "Annual_Report_2018",
+  "root": {
+    "title": "Document Root",
+    "page_start": 2,
+    "page_end": 2,
+    "summary": "Full document overview",
+    "data_types_present": [
+      "heading"
+    ],
+    "key_entities": [],
+    "child_sections": [
+      {
+        "title": "ETHIOPIAN REINSURANCE",
+        "page_start": 2,
+        "page_end": 2,
+        "summary": "Overview of ETHIOPIAN REINSURANCE",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "ANNUAL REPORT",
+        "page_start": 2,
+        "page_end": 2,
+        "summary": "Overview of ANNUAL REPORT",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      },
+      {
+        "title": "B",
+        "page_start": 2,
+        "page_end": 2,
+        "summary": "Overview of B",
+        "data_types_present": [
+          "heading"
+        ],
+        "key_entities": [],
+        "child_sections": []
+      }
+    ]
+  }
+}

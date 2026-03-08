@@ -144,7 +144,7 @@ class ChunkingEngine:
 
     def _create_ldu(self, item: Any, chunk_type: ChunkType, doc_id: str) -> LDU:
         content = ""
-        metadata = {"original_hash": item.content_hash}
+        metadata = {"original_hash": item.content_hash, "doc_id": doc_id}
         
         if isinstance(item, TextBlock):
             content = item.text
@@ -156,13 +156,13 @@ class ChunkingEngine:
             metadata["caption"] = item.caption
             metadata["alt_text"] = item.alt_text
 
-        # Generate content hash: page + bbox + text hash
+        # Generate content hash: doc_id + page + bbox + text hash
         bbox_str = f"{item.bbox.x0},{item.bbox.y0},{item.bbox.x1},{item.bbox.y1}"
-        hash_input = f"{item.page_number}:{bbox_str}:{content}"
+        hash_input = f"{doc_id}:{item.page_number}:{bbox_str}:{content}"
         content_hash = hashlib.md5(hash_input.encode()).hexdigest()
 
         return LDU(
-            id=f"ldu_{content_hash[:8]}",
+            id=f"ldu_{content_hash}",
             content=content,
             chunk_type=chunk_type,
             page_refs=[item.page_number],
@@ -182,11 +182,11 @@ class ChunkingEngine:
         y1 = max(b.bbox.y1 for b in blocks)
         
         # Simplified hash for group
-        hash_input = f"{blocks[0].page_number}:list:{content[:100]}"
+        hash_input = f"{doc_id}:{blocks[0].page_number}:list:{content[:200]}"
         content_hash = hashlib.md5(hash_input.encode()).hexdigest()
 
         return LDU(
-            id=f"ldu_list_{content_hash[:8]}",
+            id=f"ldu_list_{content_hash}",
             content=content,
             chunk_type=ChunkType.LIST,
             page_refs=list(set(b.page_number for b in blocks)),
@@ -194,7 +194,7 @@ class ChunkingEngine:
             parent_section=self.current_section,
             token_count=int(len(content.split()) / self.token_ratio),
             content_hash=content_hash,
-            metadata={"item_count": len(blocks)}
+            metadata={"item_count": len(blocks), "doc_id": doc_id}
         )
 
     def _link_caption_to_figure(self, block: TextBlock) -> bool:

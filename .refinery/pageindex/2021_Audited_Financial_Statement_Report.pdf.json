@@ -1,0 +1,15 @@
+{
+  "document_id": "2021_Audited_Financial_Statement_Report.pdf",
+  "root": {
+    "title": "Document Root",
+    "page_start": 1,
+    "page_end": 3,
+    "summary": "Full document overview",
+    "data_types_present": [
+      "text",
+      "table"
+    ],
+    "key_entities": [],
+    "child_sections": []
+  }
+}

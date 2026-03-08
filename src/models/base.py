@@ -11,16 +11,16 @@ class BoundingBox(BaseModel):
     @field_validator('x1')
     @classmethod
     def x1_greater_than_x0(cls, v: float, info):
-        if 'x0' in info.data and v < info.data['x0']:
+        if 'x0' in info.data and v < info.data['x0'] - 1e-5:
             raise ValueError('x1 must be greater than or equal to x0')
-        return v
+        return max(v, info.data.get('x0', v))
 
     @field_validator('y1')
     @classmethod
     def y1_greater_than_y0(cls, v: float, info):
-        if 'y0' in info.data and v < info.data['y0']:
+        if 'y0' in info.data and v < info.data['y0'] - 1e-5:
             raise ValueError('y1 must be greater than or equal to y0')
-        return v
+        return max(v, info.data.get('y0', v))
 
     def to_tuple(self) -> Tuple[float, float, float, float]:
         return (self.x0, self.y0, self.x1, self.y1)
