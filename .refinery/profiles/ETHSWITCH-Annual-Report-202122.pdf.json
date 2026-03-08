@@ -1,0 +1,1190 @@
+{
+  "document_id": "ETHSWITCH-Annual-Report-202122.pdf",
+  "overall_origin_type": "mixed",
+  "overall_layout_complexity": "table_heavy",
+  "overall_estimated_cost": "needs_vision_model",
+  "domain_hint": "financial",
+  "language": {
+    "code": "en",
+    "confidence": 0.9
+  },
+  "pages": [
+    {
+      "page_number": 1,
+      "origin_type": "mixed",
+      "layout_complexity": "single_column",
+      "character_density": 0.00009420273130186056,
+      "image_area_ratio": 0.022209536085084542,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 45,
+        "image_count": 1,
+        "rect_count": 0
+      }
+    },
+    {
+      "page_number": 2,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.00455313201292326,
+      "image_area_ratio": 0.09660986584013856,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2175,
+        "image_count": 38,
+        "rect_count": 87
+      }
+    },
+    {
+      "page_number": 3,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.007705783420492194,
+      "image_area_ratio": 0.10981986954254142,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 3681,
+        "image_count": 12,
+        "rect_count": 45
+      }
+    },
+    {
+      "page_number": 4,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0013125580561392572,
+      "image_area_ratio": 0.15722764613095333,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 627,
+        "image_count": 3,
+        "rect_count": 3
+      }
+    },
+    {
+      "page_number": 5,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.005149749311168377,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2460,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 6,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0023404145243440025,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1118,
+        "image_count": 2,
+        "rect_count": 53
+      }
+    },
+    {
+      "page_number": 7,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0023132004019679095,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1105,
+        "image_count": 2,
+        "rect_count": 50
+      }
+    },
+    {
+      "page_number": 8,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0029663393389941428,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1417,
+        "image_count": 19,
+        "rect_count": 30
+      }
+    },
+    {
+      "page_number": 9,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.009064396145267916,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 4330,
+        "image_count": 25,
+        "rect_count": 42
+      }
+    },
+    {
+      "page_number": 10,
+      "origin_type": "scanned_image",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.00009001594324400009,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_vision_model",
+      "metadata": {
+        "char_count": 43,
+        "image_count": 3,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 11,
+      "origin_type": "scanned_image",
+      "layout_complexity": "single_column",
+      "character_density": 0.00009001594324400009,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_vision_model",
+      "metadata": {
+        "char_count": 43,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 12,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.002648143446596747,
+      "image_area_ratio": 0.5356164423618697,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1265,
+        "image_count": 4,
+        "rect_count": 5
+      }
+    },
+    {
+      "page_number": 13,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.007381307346008008,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3526,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 14,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.003274068261246887,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1564,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 15,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0025644076854395375,
+      "image_area_ratio": 0.33894025259431576,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1225,
+        "image_count": 3,
+        "rect_count": 5
+      }
+    },
+    {
+      "page_number": 16,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0021813165781453046,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1042,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 17,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.001712396315664932,
+      "image_area_ratio": 0.13070525824167456,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 818,
+        "image_count": 6,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 18,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.004760378021787354,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2274,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 19,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002888883759923724,
+      "image_area_ratio": 0.2701194166706592,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1380,
+        "image_count": 3,
+        "rect_count": 25
+      }
+    },
+    {
+      "page_number": 20,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0032049862582921892,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1531,
+        "image_count": 2,
+        "rect_count": 17
+      }
+    },
+    {
+      "page_number": 21,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.006642339253795634,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 3173,
+        "image_count": 2,
+        "rect_count": 27
+      }
+    },
+    {
+      "page_number": 22,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002459737983993026,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1175,
+        "image_count": 2,
+        "rect_count": 19
+      }
+    },
+    {
+      "page_number": 23,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.007303851766937589,
+      "image_area_ratio": 0.30982613283654736,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 3489,
+        "image_count": 19,
+        "rect_count": 36
+      }
+    },
+    {
+      "page_number": 24,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0025183530168030725,
+      "image_area_ratio": 0.8251102341284616,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1203,
+        "image_count": 4,
+        "rect_count": 3
+      }
+    },
+    {
+      "page_number": 25,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.00838613647989452,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 4006,
+        "image_count": 2,
+        "rect_count": 21
+      }
+    },
+    {
+      "page_number": 26,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.007724623966752566,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 3690,
+        "image_count": 2,
+        "rect_count": 12
+      }
+    },
+    {
+      "page_number": 27,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.010743298156469964,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 5132,
+        "image_count": 2,
+        "rect_count": 32
+      }
+    },
+    {
+      "page_number": 28,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0060771228659844715,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2903,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 29,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0020766468766987927,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 992,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 30,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.007969551068137404,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 3807,
+        "image_count": 2,
+        "rect_count": 11
+      }
+    },
+    {
+      "page_number": 31,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.006918667265614426,
+      "image_area_ratio": 0.29269890150164624,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 3305,
+        "image_count": 4,
+        "rect_count": 37
+      }
+    },
+    {
+      "page_number": 32,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0033850181447801896,
+      "image_area_ratio": 0.20121704916864883,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1617,
+        "image_count": 9,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 33,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.0064727743374522854,
+      "image_area_ratio": 0.10303511047046873,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3092,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 34,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.009317696822768475,
+      "image_area_ratio": 0.38488495175992077,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 4451,
+        "image_count": 3,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 35,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.00029098177002130263,
+      "image_area_ratio": 0.43021099283820574,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 139,
+        "image_count": 6,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 36,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.005344434955858889,
+      "image_area_ratio": 0.15129225922976555,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2553,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 37,
+      "origin_type": "native_digital",
+      "layout_complexity": "single_column",
+      "character_density": 0.004437995341332097,
+      "image_area_ratio": 0.017484003276599953,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2120,
+        "image_count": 2,
+        "rect_count": 1
+      }
+    },
+    {
+      "page_number": 38,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.003558769849181399,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1700,
+        "image_count": 3,
+        "rect_count": 78
+      }
+    },
+    {
+      "page_number": 39,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0022545853691578626,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1077,
+        "image_count": 3,
+        "rect_count": 46
+      }
+    },
+    {
+      "page_number": 40,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0026460500525678165,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1264,
+        "image_count": 3,
+        "rect_count": 38
+      }
+    },
+    {
+      "page_number": 41,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.005040892821664005,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2408,
+        "image_count": 3,
+        "rect_count": 84
+      }
+    },
+    {
+      "page_number": 42,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.005243952042470238,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2505,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 43,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0034206058432720036,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 1634,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 44,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.004969717424680377,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2374,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 45,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.004703856383006237,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2247,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 46,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.005336061379743168,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2549,
+        "image_count": 3,
+        "rect_count": 6
+      }
+    },
+    {
+      "page_number": 47,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.005181150221602331,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2475,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 48,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0063011160270800065,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3010,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 49,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0060750294719555415,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2902,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 50,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.006719794832866053,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3210,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 51,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.005518186660260099,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2636,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 52,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.006816090958196844,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3256,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 53,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.005076480520155819,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2425,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 54,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.007094512364044565,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3389,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 55,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0062906490569353555,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3005,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 56,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.004879701481436377,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2331,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 57,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.007125913274478519,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3404,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 58,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0062739019047039135,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2997,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 59,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.007509004381772752,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 3587,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 60,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.005426077322987169,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2592,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 61,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004046530657922143,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1933,
+        "image_count": 3,
+        "rect_count": 40
+      }
+    },
+    {
+      "page_number": 62,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002932845034531259,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1401,
+        "image_count": 3,
+        "rect_count": 66
+      }
+    },
+    {
+      "page_number": 63,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0008143302772538613,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 389,
+        "image_count": 3,
+        "rect_count": 10
+      }
+    },
+    {
+      "page_number": 64,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004530104678605028,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2164,
+        "image_count": 3,
+        "rect_count": 78
+      }
+    },
+    {
+      "page_number": 65,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0030689156464117242,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1466,
+        "image_count": 3,
+        "rect_count": 32
+      }
+    },
+    {
+      "page_number": 66,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0040297835056907014,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1925,
+        "image_count": 3,
+        "rect_count": 30
+      }
+    },
+    {
+      "page_number": 67,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002863763031576561,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1368,
+        "image_count": 3,
+        "rect_count": 20
+      }
+    },
+    {
+      "page_number": 68,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.003969075078851725,
+      "image_area_ratio": 0.1143075632215241,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1896,
+        "image_count": 3,
+        "rect_count": 21
+      }
+    },
+    {
+      "page_number": 69,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002754906542072189,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1316,
+        "image_count": 3,
+        "rect_count": 25
+      }
+    },
+    {
+      "page_number": 70,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0030940363747588868,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1478,
+        "image_count": 3,
+        "rect_count": 40
+      }
+    },
+    {
+      "page_number": 71,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0039230204102152595,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1874,
+        "image_count": 3,
+        "rect_count": 12
+      }
+    },
+    {
+      "page_number": 72,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004795965720279168,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 2291,
+        "image_count": 3,
+        "rect_count": 19
+      }
+    },
+    {
+      "page_number": 73,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.005327687803627448,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2545,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 74,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.002861669637547631,
+      "image_area_ratio": 0.12558001597257948,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1367,
+        "image_count": 4,
+        "rect_count": 36
+      }
+    },
+    {
+      "page_number": 75,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0031693985598003752,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1514,
+        "image_count": 3,
+        "rect_count": 40
+      }
+    },
+    {
+      "page_number": 76,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004111425872818981,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1964,
+        "image_count": 3,
+        "rect_count": 22
+      }
+    },
+    {
+      "page_number": 77,
+      "origin_type": "native_digital",
+      "layout_complexity": "figure_heavy",
+      "character_density": 0.0062278472360674485,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "fast_text_sufficient",
+      "metadata": {
+        "char_count": 2975,
+        "image_count": 3,
+        "rect_count": 4
+      }
+    },
+    {
+      "page_number": 78,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.004180507875773678,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1997,
+        "image_count": 3,
+        "rect_count": 28
+      }
+    },
+    {
+      "page_number": 79,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.003512715180544934,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1678,
+        "image_count": 3,
+        "rect_count": 32
+      }
+    },
+    {
+      "page_number": 80,
+      "origin_type": "native_digital",
+      "layout_complexity": "table_heavy",
+      "character_density": 0.0039669816848227945,
+      "image_area_ratio": 0.11430756322152412,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 1895,
+        "image_count": 3,
+        "rect_count": 9
+      }
+    },
+    {
+      "page_number": 81,
+      "origin_type": "scanned_image",
+      "layout_complexity": "single_column",
+      "character_density": 0.0,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": false,
+      "estimated_extraction_cost": "needs_vision_model",
+      "metadata": {
+        "char_count": 0,
+        "image_count": 1,
+        "rect_count": 0
+      }
+    },
+    {
+      "page_number": 82,
+      "origin_type": "scanned_image",
+      "layout_complexity": "single_column",
+      "character_density": 0.00009210933727293032,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_vision_model",
+      "metadata": {
+        "char_count": 44,
+        "image_count": 2,
+        "rect_count": 2
+      }
+    },
+    {
+      "page_number": 83,
+      "origin_type": "scanned_image",
+      "layout_complexity": "single_column",
+      "character_density": 4.186788057860469e-6,
+      "image_area_ratio": 1.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_vision_model",
+      "metadata": {
+        "char_count": 2,
+        "image_count": 2,
+        "rect_count": 1
+      }
+    },
+    {
+      "page_number": 84,
+      "origin_type": "native_digital",
+      "layout_complexity": "multi_column",
+      "character_density": 0.00026586104167413983,
+      "image_area_ratio": 0.0,
+      "has_font_metadata": true,
+      "estimated_extraction_cost": "needs_layout_model",
+      "metadata": {
+        "char_count": 127,
+        "image_count": 0,
+        "rect_count": 1
+      }
+    }
+  ],
+  "metadata": {}
+}

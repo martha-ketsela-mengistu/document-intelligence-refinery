@@ -118,3 +118,5 @@
 {"action": "search", "metadata": {"query": "cash and cash equivalents 2021", "top_k": 5, "result_count": 5}, "duration": 0.08246326446533203, "timestamp": 1772919595.6080146}
 {"action": "search", "metadata": {"query": "cash and cash equivalents 2021", "top_k": 5, "result_count": 5}, "duration": 0.08416438102722168, "timestamp": 1772920295.0696247}
 {"action": "search", "metadata": {"query": "cash and cash equivalents 2021", "top_k": 5, "result_count": 5}, "duration": 0.12807297706604004, "timestamp": 1772920604.4027226}
+{"action": "search", "metadata": {"query": "four taxes levied on imports", "top_k": 5, "result_count": 5}, "duration": 0.19881701469421387, "timestamp": 1772927137.9965076}
+{"action": "search", "metadata": {"query": "import tax expenditures FY 2020/21", "top_k": 5, "result_count": 5}, "duration": 0.02409076690673828, "timestamp": 1772927324.2621248}
